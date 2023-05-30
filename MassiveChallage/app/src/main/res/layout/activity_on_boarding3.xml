@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OnBoarding3Activity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reporting Contact"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:padding="5dp"
+        android:layout_marginTop="100dp"
+        />
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/calling_emergency"
+        android:layout_marginTop="150dp"
+        android:layout_marginStart="75dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="users can report  if there is
+violence or harassment experienced"
+        android:textSize="24dp"
+        android:textColor="@color/black"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:layout_marginTop="400dp"
+        />
+
+    <Button
+        android:id="@+id/btnOB3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NEXT"
+        android:layout_marginTop="550dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/template_button"
+        />
+</RelativeLayout>
