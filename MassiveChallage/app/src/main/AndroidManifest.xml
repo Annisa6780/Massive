@@ -13,7 +13,25 @@
         tools:targetApi="31">
         <activity
             android:name=".RiwayatLaporanActivity"
-            android:exported="true" >
+            android:exported="true" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OnBoarding4Activity"
+            android:exported="false" />
+        <activity
+            android:name=".OnBoarding3Activity"
+            android:exported="false" />
+        <activity
+            android:name=".OnBoarding2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".OnBoarding1Activity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreenActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
