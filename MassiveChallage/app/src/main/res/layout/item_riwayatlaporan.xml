@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view_RiwayatLap"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="15dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginBottom="5dp"
+    card_view:cardCornerRadius="20dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="215dp"
+        android:padding="15dp">
+
+        <Button
+            android:id="@+id/btn_title_riwayatlaporan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/title_riwayat"
+            android:padding="15dp"
+            android:text="@string/title_riwayatlap"
+            card_view:cornerRadius="20dp"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/tv_jenislaporan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_title_riwayatlaporan"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="5dp"
+            android:text="@string/jenis_laporan"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_tanggal_lapor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_jenislaporan"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="5dp"
+            android:text="@string/tanggal_lapor"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tv_alamat_riwayat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_tanggal_lapor"
+            android:layout_marginTop="3dp"
+            android:paddingLeft="5dp"
+            android:text="@string/alamat"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tv_status_riwayat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_alamat_riwayat"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="273dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="0dp"
+            android:text="@string/status_proses"
+            android:textSize="15sp"
+            android:textColor="@color/status_proses"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

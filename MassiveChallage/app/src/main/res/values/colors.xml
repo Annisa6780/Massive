@@ -7,4 +7,11 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="title_riwayat">#005879</color>
+    <color name="status_proses">#FDE047</color>
+    <color name="status_menunggu">#DC2626</color>
+    <color name="status_terima">#65A30D</color>
+
+
 </resources>

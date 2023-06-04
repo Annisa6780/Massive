@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">MassiveChallage</string>
+
+    <string name="title_riwayatlap">LAPORAN WANITA</string>
+    <string name="jenis_laporan">Pelecehan Seksual</string>
+    <string name="tanggal_lapor">22 Oktober 2023</string>
+    <string name="alamat">Jl Ahmad Yani 202 Sumatera Utara  Indonesia</string>
+
+    <string name="status_proses">Dalam Proses</string>
+    <string name="status_menunggu">Menunggu</string>
+    <string name="status_diterima">Diterima</string>
+
+
 </resources>
