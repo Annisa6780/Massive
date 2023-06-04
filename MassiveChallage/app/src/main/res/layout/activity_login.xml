@@ -83,7 +83,7 @@
         android:layout_marginBottom="100dp"/>
 
     <Button
-        android:id="@+id/Daftar"
+        android:id="@+id/btnDaftar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/template_button"
