@@ -11,7 +11,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Selamat Datang Di"
-        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textSize="30dp"
         android:textColor="@color/black"
         android:padding="5dp"
         android:layout_marginTop="200dp"
@@ -21,25 +22,40 @@
         />
 
     <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bersama kita melawan kekerasan !!"
+        android:textSize="18sp"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="LAWAN"
-        android:textSize="30dp"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        android:padding="5dp"
         android:layout_marginTop="10dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvwelco"
+        android:src="@drawable/logoapp"
         app:layout_constraintEnd_toEndOf="parent"
-        />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvwelco" />
+
+
 
     <Button
         android:id="@+id/btnOB1"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="NEXT"
-        android:background="@drawable/template_button"
+
+        android:backgroundTint="@color/primery"
+        android:text="Berikutnya"
+        android:textColor="@color/white"
+        app:cornerRadius="20dp"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
