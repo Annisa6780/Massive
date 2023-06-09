@@ -12,10 +12,12 @@
         android:theme="@style/Theme.MassiveChallage"
         tools:targetApi="31">
         <activity
+            android:name=".BottomNavigationActivity"
+            android:exported="false"
+            android:label="@string/title_activity_bottom_navigation" />
+        <activity
             android:name=".RiwayatLaporanActivity"
-            android:exported="true" >
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".LoginActivity"
             android:exported="false" />
@@ -42,9 +44,7 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
     </application>
 
 </manifest>

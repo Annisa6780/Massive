@@ -9,6 +9,13 @@
     <string name="status_proses">Dalam Proses</string>
     <string name="status_menunggu">Menunggu</string>
     <string name="status_diterima">Diterima</string>
+    <string name="title_activity_bottom_navigation">BottomNavigationActivity</string>
+
+    <string name="title_home">Home</string>
+    <string name="title_laporan">Laporan</string>
+    <string name="title_edukasi">Edukasi</string>
+    <string name="title_kontakLaporan">Kontak</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>
