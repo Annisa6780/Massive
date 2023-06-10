@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.FormPelaporanActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Mohon untuk tidak membuat laporan palsu"
+                android:background="#D62121"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="16dp"
+                android:padding="10dp"/>
+
+            <TextView
+                android:id="@+id/nama_pelapor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nama Pelapor"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:padding="10dp"/>
+            
+            <EditText
+                android:id="@+id/edt_nama_pelapor"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:padding="5dp"
+                android:hint="Nama Lengkap Pelapor"/>
+
+            <TextView
+                android:id="@+id/usia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Usia"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:padding="10dp"/>
+
+            <EditText
+                android:id="@+id/adt_usia"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:ems="2"
+                android:hint="21"
+                android:inputType="number"
+                android:textSize="16dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/no_telp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nomor Telepon"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:padding="10dp"/>
+
+            <EditText
+                android:id="@+id/edt_noTelp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="08xx xxxx xxxx"
+                android:ems="12"
+                android:inputType="phone"
+                android:textColor="@color/black"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:id="@+id/alamat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Alamat"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:padding="10dp"/>
+
+            <EditText
+                android:id="@+id/edt_alamat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:ems="30"
+                android:inputType="textPostalAddress"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:maxLines="1"
+                android:hint="Alamat Lengkap Pelapor"
+                android:lines="1"/>
+
+            <TextView
+                android:id="@+id/lokasi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lokasi Kejadian"
+                android:textSize="16dp"
+                                android:textColor="@color/black"
+                android:padding="10dp"/>
+
+            <EditText
+                android:id="@+id/edt_lokasi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:ems="30"
+                android:maxLines="1"
+                android:lines="1"
+                android:hint="Alamat lengkap"
+                android:inputType="textPostalAddress"
+                android:textColor="@color/black"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:id="@+id/tgl_kejadian"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tanggal Kejadian"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:padding="10dp"/>
+
+            <EditText
+                android:id="@+id/edt_tglKejadian"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="8"
+                android:hint="30-01-2021"
+                android:inputType="date"
+                android:textColor="@color/black"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:id="@+id/judul"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Judul Laporan"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:padding="10dp"/>
+
+            <EditText
+                android:id="@+id/edt_judul"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:hint="contoh: Tetanggaku melakukan kekerasan"
+                android:maxEms="30"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:maxLines="1"
+                android:lines="1"/>
+
+            <TextView
+                android:id="@+id/jns_laporan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jenis Laporan"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:padding="10dp"/>
+
+            <EditText
+                android:id="@+id/edt_jnsLaporan"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:hint="contoh: Kekerasan Rumah Tangga"
+                android:maxEms="30"
+                android:textColor="@color/black"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:id="@+id/isi_laporan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Isi Laporan"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:padding="10dp"/>
+
+            <EditText
+                android:id="@+id/edt_isiLaporan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:maxEms="300"
+                android:hint="Ceritakan detail kejadian"
+                android:maxLines="2"
+                android:lines="2"/>
+
+            <TextView
+                android:id="@+id/bukti"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Unggah Bukti"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:padding="10dp"/>
+
+            <androidx.constraintlayout.utils.widget.MockView
+                android:id="@+id/mockView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Saya telah membaca dan menyetujui syarat dan ketentuan layanan" />
+
+            <Button
+                android:id="@+id/btn_simpan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Simpan" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

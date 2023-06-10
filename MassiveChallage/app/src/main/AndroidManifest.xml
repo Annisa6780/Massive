@@ -12,6 +12,12 @@
         android:theme="@style/Theme.MassiveChallage"
         tools:targetApi="31">
         <activity
+            android:name=".FormPelaporanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LaporanPolsekActivity"
+            android:exported="false" />
+        <activity
             android:name=".PelaporActivity"
             android:exported="false" />
         <activity
