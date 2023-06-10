@@ -31,6 +31,13 @@ class RiwayatLaporanActivity : AppCompatActivity() {
                 alamatPelapor = "Jl c",
                 statusLaporan = R.string.status_diterima,
                 statuswarLaporan = R.color.status_terima
+            ),
+            DataRiwayatLaporan(
+                jenisLaporan = "Eksploitasi",
+                tanggalLapor = "7 Juni 2023",
+                alamatPelapor = "Jl c",
+                statusLaporan = R.string.status_diterima,
+                statuswarLaporan = R.color.status_terima
             )
         )
 

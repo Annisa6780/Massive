@@ -14,7 +14,7 @@ class LoginActivity : AppCompatActivity() {
         btnSementara = findViewById(R.id.btnMasuk)
 
         btnSementara?.setOnClickListener {
-            startActivity(Intent(this@LoginActivity, RiwayatLaporanActivity::class.java))
+            startActivity(Intent(this@LoginActivity, PelaporActivity::class.java))
         }
     }
 }

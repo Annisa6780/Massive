@@ -1,7 +1,9 @@
 <resources>
     <string name="app_name">Lawan.id</string>
 
-    <string name="title_riwayatlap">LAPORAN WANITA</string>
+    <string name="title_riwayatlap">Pengajuan Laporan</string>
+    <string name="jumlah_riwayat">10</string>
+    <string name="txt_laporan">Laporan</string>
     <string name="jenis_laporan">Pelecehan Seksual</string>
     <string name="tanggal_lapor">22 Oktober 2023</string>
     <string name="alamat">Jl Ahmad Yani 202 Sumatera Utara  Indonesia</string>
@@ -17,5 +19,38 @@
     <string name="title_kontakLaporan">Kontak</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
+    <string-array name="data_judul">
+        <item>Pembulian di Institut Teknologi Batam</item>
+        <item>Pembulian di SMA</item>
+        <item>Pelecehan di Universitas</item>
+        <item>Pembulian di Sekolah</item>
+    </string-array>
 
+    <string-array name="data_jenis">
+        <item>Bullying</item>
+        <item>Cyberbullying</item>
+        <item>Fisik atau Psikis</item>
+        <item>Pelecehan Seksual</item>
+    </string-array>
+
+    <string-array name="data_tanggal">
+        <item>1/6/2023</item>
+        <item>2/6/2023</item>
+        <item>3/6/2023</item>
+        <item>4/6/2023</item>
+    </string-array>
+
+    <string-array name="data_status">
+        <item>Diproses</item>
+        <item>Diproses</item>
+        <item>Diproses</item>
+        <item>Diproses</item>
+    </string-array>
+
+    <integer-array name="data_photo">
+        <item>@drawable/foto1</item>
+        <item>@drawable/foto2</item>
+        <item>@drawable/foto3</item>
+        <item>@drawable/foto4</item>
+    </integer-array>
 </resources>
