@@ -1,7 +1,8 @@
-package com.example.massivechallage.ui
+package com.example.massivechallage
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.massivechallage.R
 
 class FormPelaporanActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -1,12 +1,10 @@
-package com.example.massivechallage.ui
+package com.example.massivechallage
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ArrayAdapter
 import android.widget.ListView
-import android.widget.Toast
-import com.example.massivechallage.R
 
 class LaporanPolsekActivity : AppCompatActivity() {
 
