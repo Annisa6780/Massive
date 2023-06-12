@@ -11,6 +11,7 @@ class OnBoarding3Activity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        supportActionBar?.hide()
         setContentView(R.layout.activity_on_boarding3)
 
         btnOB3 = findViewById(R.id.btnOB3)

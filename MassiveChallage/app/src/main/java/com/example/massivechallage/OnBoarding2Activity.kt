@@ -12,7 +12,7 @@ class OnBoarding2Activity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        supportRequestWindowFeature(Window.FEATURE_NO_TITLE)
+        supportRequestWindowFeature(Window.FEATURE_NO_TITLE) //untuk menghilangkan appsbar
         setContentView(R.layout.activity_on_boarding2)
 
         btnOB2 = findViewById(R.id.btnOB2)

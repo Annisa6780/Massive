@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 class RiwayatLaporanActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        supportActionBar?.hide()
         setContentView(R.layout.activity_riwayat_laporan)
 
         val RiwayatLaporanList = listOf<DataRiwayatLaporan>(

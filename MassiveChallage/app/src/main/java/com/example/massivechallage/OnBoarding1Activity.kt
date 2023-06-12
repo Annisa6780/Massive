@@ -11,6 +11,7 @@ class OnBoarding1Activity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        supportActionBar?.hide() //untuk menghilangkan appsbar
         setContentView(R.layout.activity_on_boarding1)
 
         btnOB1 = findViewById(R.id.btnOB1)

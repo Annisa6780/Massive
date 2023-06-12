@@ -9,6 +9,7 @@ class LoginActivity : AppCompatActivity() {
     var btnSementara: Button? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        supportActionBar?.hide()
         setContentView(R.layout.activity_login)
 
         btnSementara = findViewById(R.id.btnMasuk)

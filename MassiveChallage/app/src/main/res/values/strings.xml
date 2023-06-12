@@ -26,6 +26,15 @@
         <item>Pembulian di Sekolah</item>
     </string-array>
 
+    <string-array name="list_kekerasan">
+        <item>Fisik atau Psikis</item>
+        <item>Pelecehan Seksual</item>
+        <item>CycberBullying</item>
+        <item>Eksploitasi</item>
+        <item>Kekerasan Dalam Rumah Tangga</item>
+    </string-array>
+
+
     <string-array name="data_jenis">
         <item>Bullying</item>
         <item>Cyberbullying</item>

@@ -9,6 +9,7 @@ import kotlinx.coroutines.delay
 class SplashScreenActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        supportActionBar?.hide()
         setContentView(R.layout.splashscreen_main)
 
         var handler = Handler()

@@ -15,6 +15,7 @@ class BottomNavigationActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        supportActionBar?.hide()
 
         binding = ActivityBottomNavigationBinding.inflate(layoutInflater)
         setContentView(binding.root)
