@@ -12,7 +12,7 @@
         android:id="@+id/ic_key"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/logoapp"
+        android:src="@drawable/logo_login"
         android:layout_marginTop="90dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -82,15 +82,33 @@
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginBottom="100dp"/>
 
-    <Button
-        android:id="@+id/btnDaftar"
+    <TextView
+        android:id="@+id/teks1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/template_button"
-        android:text="Daftar"
+        android:text="Anda Belum memiliki akun?"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:fontFamily="@font/quicksand_variablefont_wght"
         app:layout_constraintTop_toBottomOf="@id/btnMasuk"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginTop="25dp"/>
+
+    <TextView
+        android:id="@+id/daftar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DAFTAR SEKARANG"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:textColor="#004064"
+        android:textStyle="bold"
+        android:fontFamily="@font/quicksand_variablefont_wght"
+        app:layout_constraintTop_toBottomOf="@id/teks1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="5dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

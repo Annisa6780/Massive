@@ -50,10 +50,10 @@
     </string-array>
 
     <string-array name="data_status">
-        <item>Diproses</item>
-        <item>Diproses</item>
-        <item>Diproses</item>
-        <item>Diproses</item>
+        <item>Pengajuan Laporan</item>
+        <item>Laporan Diproses</item>
+        <item>Laporan Diterima</item>
+        <item>Laporan Ditolak</item>
     </string-array>
 
     <integer-array name="data_photo">

@@ -33,6 +33,7 @@
         app:layout_constraintStart_toStartOf="parent"/>
 
     <TextView
+        android:id="@+id/teks_edu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Memberikan informasi dan pengalaman untuk mencegah kekerasan atau pelecehan"
@@ -52,15 +53,13 @@
         android:id="@+id/btnOB4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
         android:backgroundTint="@color/primery"
         android:text="Berikutnya"
         android:textColor="@color/white"
         app:cornerRadius="20dp"
-
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/teks_edu"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginBottom="80dp"
+        android:layout_marginTop="30dp"
         />
 </androidx.constraintlayout.widget.ConstraintLayout>

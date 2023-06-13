@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -14,6 +14,9 @@
         android:theme="@style/Theme.MassiveChallage"
         tools:targetApi="31">
         <activity
+            android:name=".DaftarActivity"
+            android:exported="false" />
+        <activity
             android:name=".WebViewActivity"
             android:exported="false" />
         <activity
@@ -24,15 +27,15 @@
             android:exported="false" />
         <activity
             android:name=".BottomNavigationActivity"
-            android:exported="false"
-            android:label="@string/title_activity_bottom_navigation" />
-        <activity
-            android:name=".RiwayatLaporanActivity"
-            android:exported="true">
+            android:exported="true"
+            android:label="@string/title_activity_bottom_navigation">
 
         </activity>
         <activity
-            android:name=".LoginActivity"
+            android:name=".RiwayatLaporanActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".SplashScreenActivity"
             android:exported="false" />
         <activity
             android:name=".OnBoarding4Activity"
@@ -47,10 +50,7 @@
             android:name=".OnBoarding1Activity"
             android:exported="false" />
         <activity
-            android:name=".SplashScreenActivity"
-            android:exported="true"></activity>
-        <activity
-            android:name=".FormPelaporanActivity"
+            android:name=".LoginActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -59,10 +59,11 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".FormPelaporanActivity"
+            android:exported="true"></activity>
+        <activity
             android:name=".MainActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true"></activity>
 
         <meta-data
             android:name="preloaded_fonts"
