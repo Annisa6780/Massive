@@ -50,10 +50,10 @@
     </string-array>
 
     <string-array name="data_status">
-        <item>Pengajuan Laporan</item>
         <item>Laporan Diproses</item>
-        <item>Laporan Diterima</item>
-        <item>Laporan Ditolak</item>
+        <item>Laporan Diproses</item>
+        <item>Laporan Diproses</item>
+        <item>Laporan Diproses</item>
     </string-array>
 
     <integer-array name="data_photo">
@@ -62,4 +62,11 @@
         <item>@drawable/foto3</item>
         <item>@drawable/foto4</item>
     </integer-array>
+
+
+    <string name="desc_a">Saya mendapatkan kekerasan secara fisik maupun psikis di sekolah, saya sering di buli dan di hajar oleh teman kelas saya sendiri hingga saya mendapatkan luka lebam yang sangat serius. saya ingin bisa belajar dengan tenang dan saya ingin  menjadi seperti murid normal lainnya yang tidak kena buli, dan saya harap yang membuli saya dapat di proses dan ditindak lanjuti dan  diberi arahan langsung oleh pihak yang berwajib agar tidak ada lagi korban yang akan bernasip sama seperti saya.</string>
+    <string name="desc_b">Saya mendapatkan kekerasan secara fisik maupun psikis di sekolah, saya sering di buli dan di hajar oleh teman kelas saya sendiri hingga saya mendapatkan luka lebam yang sangat serius. saya ingin bisa belajar dengan tenang dan saya ingin  menjadi seperti murid normal lainnya yang tidak kena buli, dan saya harap yang membuli saya dapat di proses dan ditindak lanjuti dan  diberi arahan langsung oleh pihak yang berwajib agar tidak ada lagi korban yang akan bernasip sama seperti saya.</string>
+    <string name="desc_c">Saya mendapatkan kekerasan secara fisik maupun psikis di sekolah, saya sering di buli dan di hajar oleh teman kelas saya sendiri hingga saya mendapatkan luka lebam yang sangat serius. saya ingin bisa belajar dengan tenang dan saya ingin  menjadi seperti murid normal lainnya yang tidak kena buli, dan saya harap yang membuli saya dapat di proses dan ditindak lanjuti dan  diberi arahan langsung oleh pihak yang berwajib agar tidak ada lagi korban yang akan bernasip sama seperti saya.</string>
+    <string name="desc_d">Saya mendapatkan kekerasan secara fisik maupun psikis di sekolah, saya sering di buli dan di hajar oleh teman kelas saya sendiri hingga saya mendapatkan luka lebam yang sangat serius. saya ingin bisa belajar dengan tenang dan saya ingin  menjadi seperti murid normal lainnya yang tidak kena buli, dan saya harap yang membuli saya dapat di proses dan ditindak lanjuti dan  diberi arahan langsung oleh pihak yang berwajib agar tidak ada lagi korban yang akan bernasip sama seperti saya.</string>
+
 </resources>

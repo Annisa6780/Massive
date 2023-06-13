@@ -5,6 +5,8 @@ data class DataPelapor(
     val jenis_laporan : String,
     val tanggal_laporan : String,
     val status_laporan : String,
-    val foto_pelapor : Int
+    val foto_pelapor : Int,
+
+
 
 )

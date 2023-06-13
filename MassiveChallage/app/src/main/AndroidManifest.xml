@@ -14,6 +14,9 @@
         android:theme="@style/Theme.MassiveChallage"
         tools:targetApi="31">
         <activity
+            android:name=".DetailPelaporActivity"
+            android:exported="false" />
+        <activity
             android:name=".DaftarActivity"
             android:exported="false" />
         <activity
@@ -24,19 +27,26 @@
             android:exported="false" />
         <activity
             android:name=".PelaporActivity"
-            android:exported="false" />
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".BottomNavigationActivity"
             android:exported="true"
             android:label="@string/title_activity_bottom_navigation">
-
         </activity>
         <activity
             android:name=".RiwayatLaporanActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".SplashScreenActivity"
-            android:exported="false" />
+            android:exported="true" >
+
+        </activity>
         <activity
             android:name=".OnBoarding4Activity"
             android:exported="false" />
@@ -51,19 +61,15 @@
             android:exported="false" />
         <activity
             android:name=".LoginActivity"
-            android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:exported="true">
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".FormPelaporanActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
 
         <meta-data
             android:name="preloaded_fonts"
