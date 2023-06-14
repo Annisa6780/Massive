@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "381958231080",
+    "firebase_url": "https://lawan-project-id-620fe-default-rtdb.firebaseio.com",
+    "project_id": "lawan-project-id-620fe",
+    "storage_bucket": "lawan-project-id-620fe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:381958231080:android:cb9f0fa1c52eca3b3f911d",
+        "android_client_info": {
+          "package_name": "com.example.massivechallage"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "381958231080-onif3mfbjhphdi6a66rmvm1an0s2onim.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCi1ki38ZyQwEHLhSNGpAAndXWyWpaelao"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "381958231080-onif3mfbjhphdi6a66rmvm1an0s2onim.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
