@@ -9,12 +9,12 @@ import kotlinx.coroutines.delay
 class SplashScreenActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        supportActionBar?.hide()
+        supportActionBar?.hide() //untuk menghilangkan appsbar
         setContentView(R.layout.splashscreen_main)
 
         var handler = Handler()
         handler.postDelayed({
-            var intent = Intent(this@SplashScreenActivity, OnBoarding1Activity::class.java)
+            var intent = Intent(this@SplashScreenActivity, OnBoarding2Activity::class.java)
             startActivity(intent)
             finish()
         }, 5000)

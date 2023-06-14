@@ -17,4 +17,6 @@
     <color name="garis">#A8A29E</color>
 
     <color name="peringatan">#D62121</color>
+    <color name="bg">#F3F4F6</color>
+
 </resources>

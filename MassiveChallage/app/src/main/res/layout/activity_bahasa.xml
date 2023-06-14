@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="20dp"
-    tools:context=".LaporandanRiwayatActivity">
+    android:layout_margin="40dp"
+    tools:context=".BahasaActivity">
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/laporan_polsek"
+        android:id="@+id/bhsindo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:outlineSpotShadowColor="@color/black"
@@ -16,12 +17,13 @@
         card_view:layout_constraintStart_toStartOf="parent"
         card_view:layout_constraintEnd_toEndOf="parent"
         card_view:cardCornerRadius="10dp"
-        tools:ignore="MissingConstraints">
+        tools:ignore="MissingConstraints"
+        android:backgroundTint="@color/bg">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Laporan Polsek Terdekat"
+            android:text="Bahasa Indonesia"
             android:fontFamily="@font/montserrat_semibold"
             android:textColor="@color/black"
             android:textSize="16sp"
@@ -32,22 +34,23 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/riwayat_laporan"
+        android:id="@+id/bhsing"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:outlineSpotShadowColor="@color/black"
         tools:ignore="MissingConstraints"
-        card_view:layout_constraintTop_toBottomOf="@id/laporan_polsek"
+        card_view:layout_constraintTop_toBottomOf="@id/bhsindo"
         card_view:layout_constraintStart_toStartOf="parent"
         card_view:layout_constraintEnd_toEndOf="parent"
         card_view:cardCornerRadius="10dp"
+        android:backgroundTint="@color/bg"
         >
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Riwayat Laporan"
+            android:text="English"
             android:fontFamily="@font/montserrat_semibold"
             android:textColor="@color/black"
             android:textSize="16sp"
@@ -56,5 +59,6 @@
             android:padding="12dp"
             />
     </androidx.cardview.widget.CardView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
