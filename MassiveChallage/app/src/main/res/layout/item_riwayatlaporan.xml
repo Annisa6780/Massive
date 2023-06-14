@@ -6,19 +6,24 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_gravity="center"
-    android:layout_marginLeft="8dp"
-    android:layout_marginTop="15dp"
-    android:layout_marginRight="8dp"
-    android:layout_marginBottom="5dp"
-    card_view:cardCornerRadius="20dp"
+    android:layout_marginLeft="24dp"
+    android:layout_marginTop="24dp"
+    android:layout_marginRight="24dp"
+    card_view:cardCornerRadius="10dp"
     card_view:cardElevation="8dp"
     >
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="15dp"
         >
+
+        <View
+            android:id="@+id/v_garis"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/garis"
+            card_view:layout_constraintTop_toBottomOf="@id/linearLayout"/>
 
         <LinearLayout
             android:id="@+id/linearLayout"
@@ -37,45 +42,46 @@
                 android:gravity="center"
                 android:padding="15dp"
                 android:text="@string/title_riwayatlap"
-                android:textSize="16sp"
+                android:textSize="20sp"
                 android:textStyle="bold"
+                android:textColor="@color/primery"
                 />
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="#A8A29E" />
+
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/ll_riwayat"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
+            android:layout_margin="16dp"
             android:gravity="center"
             android:orientation="horizontal"
-            card_view:layout_constraintEnd_toEndOf="parent"
-            card_view:layout_constraintStart_toStartOf="parent"
-            card_view:layout_constraintTop_toBottomOf="@+id/linearLayout"
             android:paddingTop="8dp"
-            tools:layout_editor_absoluteY="15dp">
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintHorizontal_bias="0.21"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
             <ImageView
                 android:id="@+id/iv_gambar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/pengajuan"
-                android:paddingRight="50dp"
-                />
+                android:src="@drawable/pengajuan" />
+
+
 
             <TextView
                 android:id="@+id/jml_laporanpengajuan"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingLeft="50dp"
+                android:paddingLeft="16dp"
                 android:text="@string/jumlah_riwayat"
                 android:textAlignment="center"
-                android:textSize="32sp" />
+                android:textSize="32sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
 
             <TextView
                 android:id="@+id/teks_laporan"
@@ -84,7 +90,9 @@
                 android:layout_marginLeft="8dp"
                 android:text="@string/txt_laporan"
                 android:textAlignment="center"
-                android:textSize="14sp" />
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
 
         </LinearLayout>
 
