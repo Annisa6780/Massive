@@ -56,7 +56,7 @@
         android:backgroundTint="@color/primery"
         android:text="Berikutnya"
         android:textColor="@color/white"
-        app:cornerRadius="20dp"
+        app:cornerRadius="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/teks" />

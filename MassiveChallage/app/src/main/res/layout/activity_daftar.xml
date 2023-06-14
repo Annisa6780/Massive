@@ -4,6 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingLeft="25dp"
+    android:paddingRight="25dp"
     tools:context=".DaftarActivity">
 
     <ScrollView
@@ -30,6 +32,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Nama Lengkap (sesuai KTP)"
+                android:textSize="16dp"
                 android:textColor="@color/black"
                 android:fontFamily="@font/poppins_semibold"
                 android:layout_marginTop="20dp"
@@ -37,17 +40,20 @@
 
             <EditText
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="45dp"
                 android:hint="Nama lengkap"
-                android:textSize="16dp"
+                android:textSize="14sp"
                 android:textColor="@color/black"
                 android:fontFamily="@font/poppins_regular"
+                android:background="@drawable/custom_input"
+                android:paddingStart="10dp"
                 />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="NIK"
+                android:textSize="16dp"
                 android:textColor="@color/black"
                 android:layout_marginTop="10dp"
                 android:padding="10dp"
@@ -56,13 +62,16 @@
             <EditText
                 android:id="@+id/editTextNumber"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="45dp"
                 android:maxLength="16"
                 android:inputType="number"
                 android:hint="Nomor Induk Kependudukan"
                 android:textColor="@color/black"
                 android:fontFamily="@font/poppins_regular"
-                android:textSize="16dp"/>
+                android:textSize="14sp"
+                android:background="@drawable/custom_input"
+                android:paddingStart="10dp"
+                />
 
             <TextView
                 android:layout_width="match_parent"
@@ -76,13 +85,15 @@
             
             <EditText
                 android:layout_width="match_parent"
-                android:layout_height="48dp"
+                android:layout_height="45dp"
                 android:ems="40"
                 android:maxLines="2"
                 android:hint="Alamat (sesuai KTP)"
-                android:textSize="16dp"
+                android:textSize="14sp"
                 android:textColor="@color/black"
-                android:fontFamily="@font/poppins_regular"/>
+                android:fontFamily="@font/poppins_regular"
+                android:background="@drawable/custom_input"
+                android:paddingStart="10dp"/>
             
             <TextView
                 android:layout_width="match_parent"
@@ -97,12 +108,14 @@
             <EditText
                 android:id="@+id/editTextDate"
                 android:layout_width="match_parent"
-                android:layout_height="48dp"
+                android:layout_height="45dp"
                 android:maxLength="8"
                 android:inputType="date"
                 android:hint="DD-MM-YYYY"
-                android:textSize="16dp"
-                android:textColor="@color/black"/>
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:background="@drawable/custom_input"
+                android:paddingStart="10dp"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -129,7 +142,7 @@
                     android:text="Laki - Laki"
                     android:layout_marginRight="50dp"
                     android:fontFamily="@font/poppins_regular"
-                    android:textSize="16dp"/>
+                    android:textSize="14sp"/>
 
                 <RadioButton
                     android:id="@+id/radioButton2"
@@ -138,7 +151,7 @@
                     android:text="Perempuan"
                     android:layout_marginLeft="50dp"
                     android:fontFamily="@font/poppins_regular"
-                    android:textSize="16dp"/>
+                    android:textSize="14sp"/>
             </RadioGroup>
 
 
@@ -155,12 +168,14 @@
             <EditText
                 android:id="@+id/editTextPhone"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="45dp"
                 android:maxLength="13"
-                android:textSize="16dp"
+                android:textSize="14sp"
                 android:hint="08xx xxxx xxxx"
                 android:fontFamily="@font/poppins_regular"
-                android:inputType="phone" />
+                android:inputType="phone"
+                android:background="@drawable/custom_input"
+                android:paddingStart="10dp"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -174,12 +189,13 @@
 
             <EditText
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="45dp"
                 android:hint="cth: wirausaha, Mahasiswa"
-                android:textSize="16dp"
+                android:textSize="14sp"
                 android:textColor="@color/black"
                 android:fontFamily="@font/poppins_regular"
-                />
+                android:background="@drawable/custom_input"
+                android:paddingStart="10dp"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -222,13 +238,15 @@
             <EditText
                 android:id="@+id/editTextTextEmailAddress"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="45dp"
                 android:ems="10"
                 android:hint="xxx@gmail.com"
                 android:textColor="@color/black"
-                android:textSize="16dp"
+                android:textSize="14sp"
                 android:fontFamily="@font/poppins_regular"
-                android:inputType="textEmailAddress" />
+                android:inputType="textEmailAddress"
+                android:background="@drawable/custom_input"
+                android:paddingStart="10dp"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -243,13 +261,15 @@
             <EditText
                 android:id="@+id/editTextTextPassword2"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="45dp"
                 android:ems="10"
                 android:inputType="textPassword"
                 android:hint="Masukkan Kata Sandi"
-                android:textSize="16dp"
+                android:textSize="14sp"
                 android:textColor="@color/black"
-                android:fontFamily="@font/poppins_regular"/>
+                android:fontFamily="@font/poppins_regular"
+                android:background="@drawable/custom_input"
+                android:paddingStart="10dp"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -264,13 +284,15 @@
             <EditText
                 android:id="@+id/editTextTextPassword3"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="45dp"
                 android:ems="10"
                 android:inputType="textPassword"
                 android:hint="Masukkan Ulang Kata Sandi"
-                android:textSize="16dp"
+                android:textSize="14sp"
                 android:textColor="@color/black"
-                android:fontFamily="@font/poppins_regular"/>
+                android:fontFamily="@font/poppins_regular"
+                android:background="@drawable/custom_input"
+                android:paddingStart="10dp"/>
 
             <CheckBox
                 android:id="@+id/checkBox4"

@@ -14,4 +14,7 @@
     <color name="status_terima">#65A30D</color>
 
     <color name="primery">#005879</color>
+    <color name="garis">#A8A29E</color>
+
+    <color name="peringatan">#D62121</color>
 </resources>

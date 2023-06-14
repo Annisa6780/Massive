@@ -11,16 +11,16 @@
     <item
         android:id="@+id/navigation_laporan"
         android:icon="@drawable/file_text"
-        android:title="@string/title_laporan" />
+        android:title="" />
 
     <item
         android:id="@+id/navigation_edukasi"
         android:icon="@drawable/people"
-        android:title="@string/title_edukasi" />
+        android:title="" />
 
     <item
         android:id="@+id/navigation_kontak"
         android:icon="@drawable/phone"
-        android:title="@string/title_kontakLaporan" />
+        android:title="" />
 
 </menu>
