@@ -70,7 +70,7 @@
     <string name="desc_d">Saya mendapatkan kekerasan secara fisik maupun psikis di sekolah, saya sering di buli dan di hajar oleh teman kelas saya sendiri hingga saya mendapatkan luka lebam yang sangat serius. saya ingin bisa belajar dengan tenang dan saya ingin  menjadi seperti murid normal lainnya yang tidak kena buli, dan saya harap yang membuli saya dapat di proses dan ditindak lanjuti dan  diberi arahan langsung oleh pihak yang berwajib agar tidak ada lagi korban yang akan bernasip sama seperti saya.</string>
 
     <string name="teks1">Perjanjian Penggunaan Layanan aplikasi Lawan.id (“Perjanjian”) antara pengguna sebagai pihak yang menggunakan aplikasi Lawan.id dan situs Lawan.id, memuat syarat-syarat dan ketentuan penggunaan layanan situs www.lawan.id.com dan aplikasi Lawan.id yang berlaku bagi pengguna untuk dapat menggunakan situs Lawan.id. Mohon untuk membaca dengan hati-hati Perjanjian ini. Anda harus membaca, memahami, menerima dan menyetujui semua persyaratan dan ketentuan dalam Perjanjian ini sebelum menggunakan aplikasi dan/atau menerima konten yang terdapat di dalamnya. Dengan menggunakan aplikasi dan/atau melanjutkan akses terhadap situs Lawan.id, Pengguna menyetujui seluruh persyaratan dan ketentuan yang terdapat di dalamya, dan oleh karena itu menyetujui untuk terikat dalam suatu Perjanjian dengan Kami dan oleh karenanya Anda menyatakan persetujuan untuk dapat menerima layanan dan akses atas seluruh konten yang terdapat dalam situs Lawan.id. Jika Anda tidak menerima dan menyetujui salah satu, sebagian atau seluruh isi dari syarat dan ketentuan di Perjanjian ini, Pengguna tidak di perkenankan untuk mengakses lebih lanjut dan dipersilakan untuk meninggalkan situs Lawan.id. Setiap kegiatan terkait dengan penggunaan situs Lawan.id maka baik kami dan pengguna, dilindungi secara hukum melalui ketentuan peraturan terhadap segala bentuk perikatan yang timbul dari segala aktifitas di Situs Lawan.id telah memenuhi kaidah dan syarat sahnya suatu perikatan sebagaimana yang tercantum dalam Kitab Undang-Undang Hukum Perdata Indonesia. </string>
-    
+
     <string name="tentang">Kami mengumpulkan data  pengguna untuk mengelola dan memperlancar penggunaan aplikasi serta tujuan - tujuan lainnya selama diizinkan oleh perturan perunda -undangan yang berlaku. Adapun data pengguna yang di kumpulkan adalah sebagai berikut :
     1. Data informasi pengguna yang diberikan secara mandiri dan sukarela pada aplikasi Lawan.Id adalah sebagai berikut :
             a .  Nama
@@ -95,5 +95,18 @@
        laman yang dilihat, proses kerja aplikasi dan aktivtas
        sistem lainnya.
 </string>
+
+    <string name="berbagiInfo">Anda dapat memilih apakah anda setuju untuk membagikan informasi pribadi untuk kepentingan Lawan.Id. Namun tenang , informasi pribadi anda sudah dipastikan aman dan dilindungi oleh Lawan.Id.  </string>
+
+    <string name="isiartikel"> Kasus pelecehan dan kekerasan terhadap anak-anak sudah tingkat yang mengkhawatirkan di Indonesia. Berdasarkan laporan bulan September 2017, Komisi Perlindungan Anak Indonesia (KPAI) mencatat bahwa terdapat 116 kasus kekerasan seksual terhadap anak-anak selama tahun ini. Sementara pada 2016, jumlahnya sebanyak 120 kasus, dan pada tahun 2015 terdapat 218 kasus.
+
+  Pelecehan seksual terhadap anak merupakan suatu masalah yang sering terjadi, namun tidak pernah dibahas, dan bahkan diterima dalam masyarakat. Terlalu sering apabila kita melihat kasus mengenai kekerasan terhadap anak, baik itu seksual atau tidak, kita tidak akan merasa hal itu akan terjadi kepada kita ataupun anak kita, namun pada kenyataanya hal ini dapat terjadi kepada siapapun, khususnya kepada anak-anak.
+
+  Maka dari itu artikel ini akan mencoba membantu anda untuk melihat apabila terdapat tanda-tanda bahwa kekerasan atau pelecehan seksual telah terjadi kepada anak anda.
+</string>
+
+    <string name="namaLengkap">Fergiawan Listanto</string>
+
+    <string name="teks2">I really appreciate the insights and perspective shared in this article. It\'s definitely given me something to think about and has helped me see things from a different angle. Thank you for writing and sharing!</string>
 
 </resources>

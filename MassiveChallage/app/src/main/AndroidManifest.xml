@@ -15,6 +15,12 @@
         android:theme="@style/Theme.MassiveChallage"
         tools:targetApi="31">
         <activity
+            android:name=".DetailEdukasiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".KeamananActivity"
+            android:exported="false" />
+        <activity
             android:name=".BahasaActivity"
             android:exported="false" />
         <activity

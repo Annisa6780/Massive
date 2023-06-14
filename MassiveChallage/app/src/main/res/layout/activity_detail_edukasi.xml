@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailEdukasiActivity"
+    android:layout_margin="16dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/iv_lambang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/kepolisian"/>
+
+                <TextView
+                    android:id="@+id/tv_institut"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kepolisian Negara Republik Indonesia"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:layout_marginLeft="5dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/round_more_vert_24"
+                    android:layout_marginLeft="5dp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/judulartikel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="24dp"
+                android:text="Panduan mengetahui anak mengalami kekerasan atau kekerasan seksual"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:fontFamily="@font/montserrat_semibold"
+                />
+
+            <ImageView
+                android:id="@+id/iv_gmbrartikel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/home1"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"/>
+
+            <TextView
+                android:id="@+id/isiartikel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:padding="16dp"
+                android:text="@string/isiartikel"
+                android:textColor="@color/black"
+                android:justificationMode="inter_word"/>
+
+            <View
+                android:id="@+id/v_garis"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="32dp"
+                android:background="@color/garis"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="32dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/civ_fotoartikel"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/foto1"
+                    android:layout_marginLeft="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/namaLengkap"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="16dp"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/teks2"
+                android:padding="8dp"
+                android:layout_marginTop="24dp"
+                android:justificationMode="inter_word"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="32dp">
+
+                <ImageView
+                    android:id="@+id/icon_naik"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/atas"
+                    android:layout_marginLeft="16dp" />
+
+                <ImageView
+                    android:id="@+id/icon_turun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/bawah"
+                    android:layout_marginLeft="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5 min ago"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="16dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:text="Load More"
+                android:gravity="center"
+                android:background="@drawable/custom_input"
+                android:backgroundTint="@color/bg"/>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
