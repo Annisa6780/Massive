@@ -1,5 +1,6 @@
 package com.example.massivechallage
 
+import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -14,7 +15,8 @@ class FormPelaporanActivity : AppCompatActivity(), AdapterView.OnItemSelectedLis
         super.onCreate(savedInstanceState)
         supportActionBar?.hide()
         setContentView(R.layout.activity_form_pelaporan)
-//setting dropdown
+
+    //setting dropdown
         val spinner = findViewById<Spinner>(R.id.jenis_laporan)
 
         val adapter = ArrayAdapter.createFromResource(this, R.array.list_kekerasan, android.R.layout.simple_spinner_item)
@@ -22,6 +24,17 @@ class FormPelaporanActivity : AppCompatActivity(), AdapterView.OnItemSelectedLis
         spinner.adapter = adapter
 
         spinner.onItemSelectedListener = this
+
+        //setting tombol unggah bukti
+        val uploadButton = findViewById<Button>(R.id.btn_unggahBukti)
+
+        uploadButton.setOnClickListener {
+            val intent = Intent(Intent.ACTION_GET_CONTENT)
+            intent.type = "image"  // Tipe berkas foto
+
+            //startActivityForResult(intent, REQUEST_CODE)
+        }
+
 
         //setting button
         val btnsimpan = findViewById<Button>(R.id.btn_simpan)
@@ -31,6 +44,21 @@ class FormPelaporanActivity : AppCompatActivity(), AdapterView.OnItemSelectedLis
 
         }
     }
+
+   /* override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+
+        if (requestCode == REQUEST_CODE && resultCode == RESULT_OK) {
+            val selectedFileUri = data?.data
+            // Lakukan tindakan sesuai dengan berkas gambar yang telah dipilih
+
+            // Contoh: Simpan URI berkas ke dalam database
+            if (selectedFileUri != null) {
+                val filePath = selectedFileUri.toString()
+                // Simpan filePath ke dalam database
+            }
+        }
+    }*/
 
     override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
         // Tangani pilihan yang dipilih

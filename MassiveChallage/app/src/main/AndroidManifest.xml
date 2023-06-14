@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
 
     <application
         android:allowBackup="true"
@@ -14,6 +16,9 @@
         android:theme="@style/Theme.MassiveChallage"
         tools:targetApi="31">
         <activity
+            android:name=".KontakPolisiActivity"
+            android:exported="false" />
+        <activity
             android:name=".DetailPelaporActivity"
             android:exported="false" />
         <activity
@@ -23,11 +28,11 @@
             android:name=".WebViewActivity"
             android:exported="false" />
         <activity
-            android:name=".LaporanPolsekActivity"
+            android:name=".SplashScreenActivity"
             android:exported="false" />
         <activity
-            android:name=".PelaporActivity"
-            android:exported="true" >
+            android:name=".LaporanPolsekActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -37,16 +42,13 @@
         <activity
             android:name=".BottomNavigationActivity"
             android:exported="true"
-            android:label="@string/title_activity_bottom_navigation">
-        </activity>
+            android:label="@string/title_activity_bottom_navigation"></activity>
         <activity
             android:name=".RiwayatLaporanActivity"
             android:exported="true" />
         <activity
-            android:name=".SplashScreenActivity"
-            android:exported="true" >
-
-        </activity>
+            android:name=".LoginActivity"
+            android:exported="true"></activity>
         <activity
             android:name=".OnBoarding4Activity"
             android:exported="false" />
@@ -60,10 +62,8 @@
             android:name=".OnBoarding1Activity"
             android:exported="false" />
         <activity
-            android:name=".LoginActivity"
-            android:exported="true">
-
-        </activity>
+            android:name=".PelaporActivity"
+            android:exported="true"></activity>
         <activity
             android:name=".FormPelaporanActivity"
             android:exported="true" />

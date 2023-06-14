@@ -20,18 +20,33 @@
             android:layout_height="wrap_content"
             android:orientation="vertical" >
 
-            <TextView
-                android:id="@+id/textView"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="Mohon untuk tidak membuat laporan palsu"
-                android:background="#D62121"
-                android:textStyle="bold"
-                android:fontFamily="@font/poppins_semibold"
-                android:textAlignment="center"
-                android:textSize="16dp"
-                android:padding="10dp"/>
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:background="#D62121">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/peringatan"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:padding="5dp"
+                    android:text="Mohon untuk tidak membuat laporan palsu"
+                    android:textAlignment="center"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
 
             <TextView
                 android:id="@+id/nama_pelapor"
@@ -46,7 +61,7 @@
             <EditText
                 android:id="@+id/edt_nama_pelapor"
                 android:layout_width="match_parent"
-                android:layout_height="45dp"
+                android:layout_height="48dp"
                 android:textSize="16dp"
                 android:textColor="@color/black"
                 android:padding="5dp"
@@ -66,9 +81,9 @@
             <EditText
                 android:id="@+id/adt_usia"
                 android:layout_width="match_parent"
-                android:layout_height="45dp"
+                android:layout_height="48dp"
                 android:layout_weight="1"
-                android:ems="2"
+                android:maxLength="2"
                 android:hint="21"
                 android:inputType="number"
                 android:textSize="16dp"
@@ -88,10 +103,10 @@
             <EditText
                 android:id="@+id/edt_noTelp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:layout_weight="1"
                 android:hint="08xx xxxx xxxx"
-                android:ems="12"
+                android:maxLength="12"
                 android:inputType="phone"
                 android:fontFamily="@font/quicksand_variablefont_wght"
                 android:textColor="@color/black"
@@ -109,7 +124,7 @@
             <EditText
                 android:id="@+id/edt_alamat"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:layout_weight="2"
                 android:ems="30"
                 android:inputType="textPostalAddress"
@@ -133,10 +148,10 @@
             <EditText
                 android:id="@+id/edt_lokasi"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:layout_weight="2"
                 android:ems="30"
-                android:maxLines="1"
+                android:maxLines="2"
                 android:lines="1"
                 android:hint="Alamat lengkap"
                 android:inputType="textPostalAddress"
@@ -157,9 +172,9 @@
             <EditText
                 android:id="@+id/edt_tglKejadian"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:layout_weight="1"
-                android:ems="8"
+                android:maxLength="8"
                 android:hint="30-01-2021"
                 android:inputType="date"
                 android:fontFamily="@font/quicksand_variablefont_wght"
@@ -179,9 +194,9 @@
             <EditText
                 android:id="@+id/edt_judul"
                 android:layout_width="match_parent"
-                android:layout_height="45dp"
+                android:layout_height="48dp"
                 android:hint="contoh: Tetanggaku melakukan kekerasan"
-                android:maxEms="30"
+                android:maxLength="30"
                 android:textColor="@color/black"
                 android:textSize="16dp"
                 android:fontFamily="@font/quicksand_variablefont_wght"
@@ -201,7 +216,7 @@
             <Spinner
                 android:id="@+id/jenis_laporan"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:fontFamily="@font/quicksand_variablefont_wght"
                 android:entries="@array/list_kekerasan" />
 
@@ -227,21 +242,24 @@
                 android:fontFamily="@font/quicksand_variablefont_wght"
                 android:lines="2"/>
 
-            <TextView
-                android:id="@+id/bukti"
+                <TextView
+                    android:id="@+id/bukti"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Unggah Bukti"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:layout_marginRight="80dp"
+                    android:padding="10dp"/>
+
+            <Button
+                android:id="@+id/btn_unggahBukti"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Unggah Bukti"
-                android:textSize="16dp"
                 android:fontFamily="@font/poppins_semibold"
-                android:textColor="@color/black"
-                android:padding="10dp"/>
-
-            <androidx.constraintlayout.utils.widget.MockView
-                android:id="@+id/mockView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1" />
+                />
 
             <CheckBox
                 android:id="@+id/checkBox"
@@ -249,14 +267,24 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:fontFamily="@font/poppins_semibold"
-                android:text="Saya telah membaca dan menyetujui syarat dan ketentuan layanan" />
+                android:text="Saya telah membaca dan menyetujui" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="syarat dan ketentuan layanan"
+                android:textColor="@color/primery"
+                android:layout_marginLeft="35dp"/>
 
             <Button
                 android:id="@+id/btn_simpan"
-                android:layout_width="match_parent"
+                android:layout_width="105dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Simpan" />
+                android:layout_marginTop="30dp"
+                android:text="Simpan"
+                android:layout_gravity="center"
+                app:cornerRadius="10dp"/>
 
         </LinearLayout>
     </ScrollView>
