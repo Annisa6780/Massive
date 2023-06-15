@@ -208,12 +208,12 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="100dp"
                                 android:scaleType="fitXY"
-                                android:src="@drawable/a1" />
+                                android:src="@drawable/artikel4" />
 
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="Kekerasan di Lingkungan Sosial: Mengatasi Tantangan untuk Menciptakan Harmoni"
+                                android:text="Edukasi Kekerasan: Membangun Kesadaran dan Mengatasi Tindakan Kekerasan"
                                 android:textAlignment="center"
                                 android:textSize="10sp" />
 
@@ -237,12 +237,12 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="100dp"
                                 android:scaleType="fitXY"
-                                android:src="@drawable/artikel2" />
+                                android:src="@drawable/artikel5" />
 
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="Dampak dari Kekerasan: Menyadari Konsekuensi dan Mendorong Perubahan"
+                                android:text="Edukasi Kekerasan:Sanksi Pidana, Hak-Hak Korban dalam Tindak Pidana KDRT"
                                 android:textAlignment="center"
                                 android:textSize="10sp" />
 
@@ -266,12 +266,12 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="100dp"
                                 android:scaleType="fitXY"
-                                android:src="@drawable/artikel3" />
+                                android:src="@drawable/artikel6" />
 
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="Dampak dari Kekerasan: Menghancurkan Kehidupan dan Masyarakat"
+                                android:text="Edukasi Kekerasan:Cegah Pelecehan Seksual, Dimulai Dari Diri Sendiri"
                                 android:textAlignment="center"
                                 android:textSize="10sp" />
 
