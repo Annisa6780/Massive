@@ -15,7 +15,7 @@
         android:theme="@style/Theme.MassiveChallage"
         tools:targetApi="31">
         <activity
-            android:name=".EdukasiActivity"
+            android:name=".SplashScreenActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -65,7 +65,7 @@
             android:name=".WebViewActivity"
             android:exported="true" />
         <activity
-            android:name=".SplashScreenActivity"
+            android:name=".EdukasiActivity"
             android:exported="true"></activity>
         <activity
             android:name=".LaporanPolsekActivity"

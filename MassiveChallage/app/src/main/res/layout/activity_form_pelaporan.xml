@@ -65,7 +65,7 @@
             <EditText
                 android:id="@+id/edt_nama_pelapor"
                 android:layout_width="match_parent"
-                android:layout_height="45dp"
+                android:layout_height="48dp"
                 android:textSize="14sp"
                 android:textColor="@color/black"
                 android:padding="5dp"
@@ -87,7 +87,7 @@
             <EditText
                 android:id="@+id/adt_usia"
                 android:layout_width="match_parent"
-                android:layout_height="45dp"
+                android:layout_height="48dp"
                 android:layout_weight="1"
                 android:maxLength="2"
                 android:hint="21"
@@ -111,7 +111,7 @@
             <EditText
                 android:id="@+id/edt_noTelp"
                 android:layout_width="match_parent"
-                android:layout_height="45dp"
+                android:layout_height="48dp"
                 android:layout_weight="1"
                 android:hint="08xx xxxx xxxx"
                 android:maxLength="12"
@@ -135,7 +135,7 @@
             <EditText
                 android:id="@+id/edt_alamat"
                 android:layout_width="match_parent"
-                android:layout_height="45dp"
+                android:layout_height="48dp"
                 android:layout_weight="2"
                 android:ems="30"
                 android:inputType="textPostalAddress"
@@ -161,7 +161,7 @@
             <EditText
                 android:id="@+id/edt_lokasi"
                 android:layout_width="match_parent"
-                android:layout_height="45dp"
+                android:layout_height="48dp"
                 android:layout_weight="2"
                 android:ems="30"
                 android:maxLines="2"
@@ -188,7 +188,7 @@
             <EditText
                 android:id="@+id/edt_tglKejadian"
                 android:layout_width="match_parent"
-                android:layout_height="45dp"
+                android:layout_height="48dp"
                 android:layout_weight="1"
                 android:maxLength="8"
                 android:hint="30-01-2021"
@@ -212,7 +212,7 @@
             <EditText
                 android:id="@+id/edt_judul"
                 android:layout_width="match_parent"
-                android:layout_height="45dp"
+                android:layout_height="48dp"
                 android:hint="contoh: Tetanggaku melakukan kekerasan"
                 android:maxLength="30"
                 android:textColor="@color/black"

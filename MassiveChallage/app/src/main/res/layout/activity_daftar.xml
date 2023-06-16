@@ -39,6 +39,7 @@
                 android:padding="10dp"/>
 
             <EditText
+                android:id="@+id/nama_lengkap"
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
                 android:hint="Nama lengkap"
@@ -84,10 +85,11 @@
                 android:padding="10dp"/>
             
             <EditText
+                android:id="@+id/alamat_pelapor"
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
                 android:ems="40"
-                android:maxLines="2"
+                android:maxLines="1"
                 android:hint="Alamat (sesuai KTP)"
                 android:textSize="14sp"
                 android:textColor="@color/black"
@@ -188,6 +190,7 @@
                 android:layout_marginTop="10dp"/>
 
             <EditText
+                android:id="@+id/pekerjaan"
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
                 android:hint="cth: wirausaha, Mahasiswa"
