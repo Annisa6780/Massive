@@ -28,7 +28,7 @@
             android:layout_height="120dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:src="@drawable/foto1"
+            android:src="@drawable/profil3"
 
             app:civ_border_width="1dp"
             app:civ_border_color="@color/white"/>
