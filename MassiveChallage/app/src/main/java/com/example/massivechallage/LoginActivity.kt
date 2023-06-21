@@ -16,8 +16,6 @@ class LoginActivity : AppCompatActivity() {
     lateinit var binding: ActivityLoginBinding
     lateinit var auth : FirebaseAuth
 
-    /*var btnLogin: Button? = null
-    var btnDaftar: TextView? = null*/
     override fun onCreate(savedInstanceState: Bundle?) {
 
         binding = ActivityLoginBinding.inflate(layoutInflater)
@@ -64,18 +62,6 @@ class LoginActivity : AppCompatActivity() {
 
             LoginFirebase(email,kata_sandi)
         }
-
-
-        /*btnLogin = findViewById(R.id.btnMasuk)
-        btnLogin?.setOnClickListener {
-            startActivity(Intent(this@LoginActivity, PelaporActivity::class.java))
-        }
-
-        btnDaftar = findViewById(R.id.daftar)
-        btnDaftar?.setOnClickListener {
-            startActivity(Intent(this@LoginActivity, DaftarActivity::class.java))
-        }*/
-
     }
 
     private fun LoginFirebase(email: String, kataSandi: String) {
@@ -84,7 +70,7 @@ class LoginActivity : AppCompatActivity() {
             .addOnCompleteListener(this) {
                 if (it.isSuccessful) {
                     Toast.makeText(this, "Login Berhasil! Selamat Datang $email", Toast.LENGTH_LONG).show()
-                    val intent = Intent(this, BottomNavigationActivity::class.java)
+                    val intent = Intent(this, DashboarActivity::class.java)
                     startActivity(intent)
                 } else {
                     Toast.makeText(this, "${it.exception?.message}", Toast.LENGTH_SHORT).show()

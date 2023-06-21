@@ -52,7 +52,7 @@ Batam Kota, Kota Batam, Kepulauan Riau"
                 />
 
             <TextView
-                android:id="@+id/no.telp_polsek"
+                android:id="@+id/telp_polsek"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="(0778) 457212"
