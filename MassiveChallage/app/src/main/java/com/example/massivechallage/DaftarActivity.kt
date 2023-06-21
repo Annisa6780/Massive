@@ -1,15 +1,15 @@
 package com.example.massivechallage
 
 import android.content.Intent
+import android.os.Build.VERSION_CODES.S
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Patterns
-import android.widget.RadioButton
-import android.widget.RadioGroup
 import android.widget.Toast
+import com.example.massivechallage.data.Pengguna
 import com.example.massivechallage.databinding.ActivityDaftarBinding
 import com.google.firebase.auth.FirebaseAuth
-import java.util.regex.Pattern
+import com.google.firebase.database.FirebaseDatabase
 
 /*private var RadioGroup.error: String
     get() {}
@@ -120,23 +120,21 @@ class DaftarActivity : AppCompatActivity() {
             }
             //kondisi jika konfirm pass tidak sama dgn pass?
 
+            val pengguna = Pengguna(nik, nama, alamat, ttl, telp, pekerjaan, email, kata_sandi)
+            saveData(pengguna)
             DaftarFirebase(email,kata_sandi)
         }
+    }
 
-        
+    private fun saveData(pengguna : Pengguna) {
+        val ref = FirebaseDatabase.getInstance().getReference("pengguna")
+        val nik = ref.push().key
 
-        val radioGroup = findViewById<RadioGroup>(R.id.radioGroup)
+        if (nik != null) {
+            ref.child(nik).setValue(pengguna).addOnCompleteListener{
 
-        radioGroup.setOnCheckedChangeListener { group, checkedId ->
-            val radioButton = findViewById<RadioButton>(checkedId)
-
-            // Dapatkan teks dari RadioButton yang dipilih
-            val selectedText = radioButton.text.toString()
-
-            // Lakukan sesuatu dengan teks yang dipilih
-            Toast.makeText(this, "Anda memilih: $selectedText", Toast.LENGTH_SHORT).show()
+            }
         }
-
     }
 
     private fun DaftarFirebase(email: String, kataSandi: String) {
