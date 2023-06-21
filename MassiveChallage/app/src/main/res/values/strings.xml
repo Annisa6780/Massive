@@ -1,7 +1,12 @@
 <resources>
     <string name="app_name">Lawan.id</string>
 
-    <string name="title_riwayatlap">Pengajuan Laporan</string>
+    <string name="title_pengajuanLaporan">Pengajuan Laporan</string>
+    <string name="title_laporanDiproses">Laporan Diproses</string>
+    <string name="title_laporanDiterima">Laporan Diterima</string>
+    <string name="title_laporanDitolak">Laporan Ditolak</string>
+
+
     <string name="jumlah_riwayat">10</string>
     <string name="txt_laporan">Laporan</string>
     <string name="jenis_laporan">Pelecehan Seksual</string>
