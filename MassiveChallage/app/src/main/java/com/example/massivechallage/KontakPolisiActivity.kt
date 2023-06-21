@@ -5,7 +5,7 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.massivechallage.adapter.AdapterKontakPolisi
+import com.example.massivechallage.data.adapter.AdapterKontakPolisi
 import com.example.massivechallage.data.KontakPolisi
 import com.google.firebase.database.*
 

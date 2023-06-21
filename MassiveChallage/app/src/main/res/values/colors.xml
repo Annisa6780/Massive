@@ -9,9 +9,11 @@
     <color name="white">#FFFFFFFF</color>
 
     <color name="title_riwayat">#005879</color>
-    <color name="status_proses">#FDE047</color>
+    <color name="status_proses">#004064</color>
     <color name="status_menunggu">#DC2626</color>
     <color name="status_terima">#65A30D</color>
+    <color name="status_tolak">#DC2626</color>
+
 
     <color name="primery">#005879</color>
     <color name="garis">#A8A29E</color>

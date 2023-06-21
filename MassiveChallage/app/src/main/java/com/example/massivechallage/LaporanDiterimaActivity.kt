@@ -3,18 +3,17 @@ package com.example.massivechallage
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
-class PelaporActivity : AppCompatActivity() {
+class LaporanDiterimaActivity : AppCompatActivity() {
 
     private lateinit var  rv_listpelapor : RecyclerView
-    private lateinit var listPelapor : ArrayList<DataPelapor>
+    private lateinit var listPelapor : ArrayList<DataLaporanDiterima>
     lateinit var dataJudul : Array<String>
     lateinit var dataJenis : Array<String>
     lateinit var dataTanggal : Array<String>
-//    lateinit var dataStatus : String
+    lateinit var dataStatus : String
     lateinit var dataFoto : Array<Int>
 
     lateinit var nama : Array<String>
@@ -29,8 +28,8 @@ class PelaporActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        supportActionBar?.hide()
-        setContentView(R.layout.activity_pelapor)
+        setContentView(R.layout.activity_laporan_diterima)
+
 
         dataJudul = arrayOf(
             "Pembulian di Institut Teknologi Batam",
@@ -53,7 +52,7 @@ class PelaporActivity : AppCompatActivity() {
             "4/6/2023"
         )
 
-//        dataStatus = "Diproses"
+        dataStatus = "Diterima"
 
         dataFoto = arrayOf(
             R.drawable.profil3,
@@ -131,7 +130,7 @@ class PelaporActivity : AppCompatActivity() {
         rv_listpelapor.layoutManager = LinearLayoutManager(this)
         rv_listpelapor.setHasFixedSize(true)
 
-        listPelapor = arrayListOf<DataPelapor>()
+        listPelapor = arrayListOf<DataLaporanDiterima>()
         getUserData()
 
     }
@@ -139,23 +138,23 @@ class PelaporActivity : AppCompatActivity() {
     private fun getUserData() {
 
         for (i in dataJudul.indices){
-            val itemPel = DataPelapor(
+            val itemPel = DataLaporanDiterima(
                 dataJudul[i],
                 dataJenis[i],
                 dataTanggal[i],
-//                dataStatus,
+                dataStatus,
                 dataFoto[i]
             )
             listPelapor.add(itemPel)
         }
 
-        val pelaporListAdapter = AdapterPelapor(listPelapor)
-        rv_listpelapor.adapter = pelaporListAdapter
-        pelaporListAdapter.setOnItemClickListener(object : AdapterPelapor.onItemClickListener{
+        val lapDiterimaListAdapter = AdapterLaporanDiterima(listPelapor)
+        rv_listpelapor.adapter = lapDiterimaListAdapter
+        lapDiterimaListAdapter.setOnItemClickListener(object : AdapterLaporanDiterima.onItemClickListener{
             override fun onItemClick(position: Int) {
 
                 //Toast.makeText(this@PelaporActivity, "Kamu menklik item ke-$position", Toast.LENGTH_SHORT).show()
-                val intent = Intent(this@PelaporActivity, DetailPelaporActivity::class.java)
+                val intent = Intent(this@LaporanDiterimaActivity, DetailPelaporActivity::class.java)
                 intent.putExtra("dataJudulLaporan",listPelapor[position].judul_laporan)
                 intent.putExtra("dataJenisKekerasan",listPelapor[position].jenis_laporan)
                 intent.putExtra("dataFotoPelapor",listPelapor[position].foto_pelapor)
@@ -176,6 +175,4 @@ class PelaporActivity : AppCompatActivity() {
 
         })
     }
-
-
 }

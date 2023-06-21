@@ -1,4 +1,4 @@
-package com.example.massivechallage.adapter
+package com.example.massivechallage.data.adapter
 
 import android.view.LayoutInflater
 import android.view.View
