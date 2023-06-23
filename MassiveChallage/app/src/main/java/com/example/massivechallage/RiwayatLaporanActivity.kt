@@ -1,7 +1,10 @@
 package com.example.massivechallage
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.LinearLayout
+import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
@@ -10,6 +13,30 @@ class RiwayatLaporanActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         supportActionBar?.hide()
         setContentView(R.layout.activity_riwayat_laporan)
+
+        var btnPengajuan: CardView? = null
+        btnPengajuan = findViewById(R.id.cv_pengajuanLaporan)
+        btnPengajuan?.setOnClickListener {
+            startActivity(Intent(this, LaporDanRiwayatActivity::class.java))
+        }
+
+        var btnProses: CardView? = null
+        btnProses = findViewById(R.id.cv_laporanDiproses)
+        btnProses?.setOnClickListener {
+            startActivity(Intent(this, LaporanDiprosesActivity::class.java))
+        }
+
+        var btnTerima: CardView? = null
+        btnTerima = findViewById(R.id.cv_laporanDiterima)
+        btnTerima?.setOnClickListener {
+            startActivity(Intent(this, LaporanDiterimaActivity::class.java))
+        }
+
+        var btnTolak: CardView? = null
+        btnTolak = findViewById(R.id.cv_laporanDitolak)
+        btnTolak?.setOnClickListener {
+            startActivity(Intent(this, LaporanDitolakActivity::class.java))
+        }
 
 //        val RiwayatLaporanList = listOf<DataRiwayatLaporan>(
 //            DataRiwayatLaporan(

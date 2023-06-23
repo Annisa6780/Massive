@@ -132,6 +132,12 @@ class LaporanDitolakActivity : AppCompatActivity() {
 
         listPelapor = arrayListOf<DataLaporanDitolak>()
         getUserData()
+
+        var btnDetail: RecyclerView? = null
+        btnDetail = findViewById(R.id.rv_pelapor)
+        btnDetail?.setOnClickListener {
+            startActivity(Intent(this, DetailPelaporActivity::class.java))
+        }
     }
 
 

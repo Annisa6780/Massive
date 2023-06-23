@@ -1,5 +1,6 @@
 package com.example.massivechallage
 
+import android.annotation.SuppressLint
 import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -11,6 +12,7 @@ import com.example.massivechallage.R
 class FormPelaporanActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
 
 
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         supportActionBar?.hide()
@@ -35,6 +37,11 @@ class FormPelaporanActivity : AppCompatActivity(), AdapterView.OnItemSelectedLis
             //startActivityForResult(intent, REQUEST_CODE)
         }
 
+        var btnSdK: TextView? = null
+        btnSdK = findViewById(R.id.syarat)
+        btnSdK?.setOnClickListener {
+            startActivity(Intent(this, TermsAndConditionActivity::class.java))
+        }
 
         //setting button
         val btnsimpan = findViewById<Button>(R.id.btn_simpan)
