@@ -2,10 +2,11 @@ plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
 
+    /*id 'kotlin-android-extensions'*/
     //setting firebase
     id 'com.google.gms.google-services'
     //id recyclerview riwayat laporan
-      id 'kotlin-parcelize'
+    id 'kotlin-parcelize'
 }
 
 android {
