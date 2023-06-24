@@ -1,11 +1,19 @@
 package com.example.massivechallage
 
+import android.content.ActivityNotFoundException
 import android.content.Intent
-import android.os.Build.VERSION_CODES.S
+import android.content.pm.PackageManager
+import android.graphics.Bitmap
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.provider.MediaStore
 import android.util.Patterns
+import android.widget.Button
+import android.widget.ImageView
 import android.widget.Toast
+import androidx.core.app.ActivityCompat
+import androidx.core.content.ContextCompat
 import com.example.massivechallage.data.Pengguna
 import com.example.massivechallage.databinding.ActivityDaftarBinding
 import com.google.firebase.auth.FirebaseAuth
@@ -19,6 +27,9 @@ class DaftarActivity : AppCompatActivity() {
 
     lateinit var  binding: ActivityDaftarBinding
     lateinit var auth : FirebaseAuth
+/*    val CAMERA_PERMISSION_CODE = 100
+    val CAMERA_REQUEST_CODE = 200
+    lateinit var imageView: ImageView*/
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
@@ -36,7 +47,8 @@ class DaftarActivity : AppCompatActivity() {
            /* val jenis_kelamin = binding.radioGroup.context.toString()*/ //perlu ditanyakan
             val telp = binding.editTextPhone.text.toString()
             val pekerjaan = binding.pekerjaan.text.toString()
-            //bagian upload surat pernyayaan blm
+            val pp = binding.btnUploadpp.toString()
+            val sp = binding.button.toString()
             val email = binding.editTextTextEmailAddress.text.toString()
             val kata_sandi = binding.editTextTextPassword2.text.toString()
             val konfirm_pass = binding.editTextTextPassword3.text.toString()
@@ -89,6 +101,18 @@ class DaftarActivity : AppCompatActivity() {
                 return@setOnClickListener
             }
 
+            if (pp.isEmpty()) {
+                binding.btnUploadpp.error = "Ambil Gambar Foto Profile"
+                binding.btnUploadpp.requestFocus()
+                return@setOnClickListener
+            }
+
+            if (sp.isEmpty()) {
+                binding.button.error = "Tambahkan Suerat Pernyataan"
+                binding.button.requestFocus()
+                return@setOnClickListener
+            }
+
             if (email.isEmpty()) {
                 binding.editTextTextEmailAddress.error = "Email Harus Terisi"
                 binding.editTextTextEmailAddress.requestFocus()
@@ -118,13 +142,64 @@ class DaftarActivity : AppCompatActivity() {
                 binding.editTextTextEmailAddress.requestFocus()
                 return@setOnClickListener
             }
-            //kondisi jika konfirm pass tidak sama dgn pass?
 
-            val pengguna = Pengguna(nik, nama, alamat, ttl, telp, pekerjaan, email, kata_sandi)
+            val pengguna = Pengguna(nik, nama, alamat, ttl, telp, pekerjaan, pp, sp, email, kata_sandi)
             saveData(pengguna)
             DaftarFirebase(email,kata_sandi)
         }
+
+        /*binding.button.setOnClickListener {
+
+        }
+        imageView = findViewById(R.id.imageView)
+        val btnTakePicture = findViewById<Button>(R.id.btnUploadpp)
+        btnTakePicture.setOnClickListener {
+            if (ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED) {
+                openCamera()
+            } else {
+                ActivityCompat.requestPermissions(this, arrayOf(Manifest.permission.CAMERA), CAMERA_PERMISSION_CODE)
+            }
+        }*/
+
     }
+
+
+   /* fun onUploadPdfClick() {
+        val intent = Intent(Intent.ACTION_GET_CONTENT)
+        intent.type = "application/pdf"
+        startActivityForResult(intent, PICK_PDF_REQUEST_CODE)
+    }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+
+        if (requestCode == PICK_PDF_REQUEST_CODE && resultCode == RESULT_OK) {
+            val uri: Uri? = data?.data
+            // Lakukan sesuatu dengan file PDF yang dipilih, misalnya mengunggahnya ke server
+        }
+    }*/
+
+    /*private fun openCamera() {
+        val intent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
+        startActivityForResult(intent, CAMERA_REQUEST_CODE)
+    }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+
+        if (requestCode == CAMERA_REQUEST_CODE && resultCode == RESULT_OK) {
+            val imageBitmap = data?.extras?.get("data") as Bitmap
+            imageView.setImageBitmap(imageBitmap)
+        }
+    }
+
+    override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<String>, grantResults: IntArray) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
+
+        if (requestCode == CAMERA_PERMISSION_CODE && grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+            openCamera()
+        }
+    }*/
 
     private fun saveData(pengguna : Pengguna) {
         val ref = FirebaseDatabase.getInstance().getReference("pengguna")
