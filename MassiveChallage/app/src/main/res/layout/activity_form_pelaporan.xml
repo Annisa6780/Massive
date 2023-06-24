@@ -164,8 +164,7 @@
                 android:layout_height="48dp"
                 android:layout_weight="2"
                 android:ems="30"
-                android:maxLines="2"
-                android:lines="1"
+                android:maxLines="1"
                 android:hint="Alamat lengkap"
                 android:inputType="textPostalAddress"
                 android:textColor="@color/black"
@@ -219,7 +218,6 @@
                 android:textSize="14sp"
                 android:fontFamily="@font/quicksand_variablefont_wght"
                 android:maxLines="1"
-                android:lines="1"
                 android:background="@drawable/custom_input"
                 android:paddingStart="10dp"/>
 
@@ -296,6 +294,7 @@
                 android:text="Saya telah membaca dan menyetujui" />
 
             <TextView
+                android:id="@+id/syarat"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="syarat dan ketentuan layanan"

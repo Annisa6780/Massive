@@ -3,6 +3,7 @@ package com.example.massivechallage
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
@@ -132,6 +133,12 @@ class LaporanDiterimaActivity : AppCompatActivity() {
 
         listPelapor = arrayListOf<DataLaporanDiterima>()
         getUserData()
+
+        var btnDetail: RecyclerView? = null
+        btnDetail = findViewById(R.id.rv_pelapor)
+        btnDetail?.setOnClickListener {
+            startActivity(Intent(this, DetailPelaporActivity::class.java))
+        }
 
     }
 

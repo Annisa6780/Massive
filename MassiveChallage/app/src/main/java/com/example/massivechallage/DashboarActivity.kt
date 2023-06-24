@@ -16,7 +16,7 @@ class DashboarActivity : AppCompatActivity() {
         var btnBeranda: LinearLayout? = null
         btnBeranda = findViewById(R.id.llBeranda)
         btnBeranda?.setOnClickListener {
-            startActivity(Intent(this, EdukasiActivity::class.java))
+            startActivity(Intent(this, HomeActivity::class.java))
         }
 
         var btnEdu: LinearLayout? = null

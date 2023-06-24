@@ -15,29 +15,28 @@
         android:theme="@style/Theme.MassiveChallage"
         tools:targetApi="31">
         <activity
+            android:name=".TentangActivity"
+            android:exported="false" />
+        <activity
             android:name=".LaporanDitolakActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".LaporanDiprosesActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".LaporanDiterimaActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".LaporDanRiwayatActivity"
             android:exported="false" />
         <activity
-            android:name=".DashboarActivity"
+            android:name=".HomeActivity"
             android:exported="false" />
         <activity
-            android:name=".SplashScreenActivity"
+            android:name=".DashboarActivity"
             android:exported="true" />
         <activity
-            android:name=".HomeActivity"
+            android:name=".PelaporActivity"
             android:exported="true" />
         <activity
             android:name=".DetailEdukasiActivity"
@@ -82,14 +81,8 @@
             android:name=".LaporanPolsekActivity"
             android:exported="true" />
         <activity
-            android:name=".BottomNavigationActivity"
-            android:exported="true"
-            android:label="@string/title_activity_bottom_navigation" />
-        <activity
             android:name=".RiwayatLaporanActivity"
-            android:exported="true" >
-
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".LoginActivity"
             android:exported="true" />
@@ -106,8 +99,8 @@
             android:name=".OnBoarding1Activity"
             android:exported="false" />
         <activity
-            android:name=".PelaporActivity"
-            android:exported="true" >
+            android:name=".SplashScreenActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
