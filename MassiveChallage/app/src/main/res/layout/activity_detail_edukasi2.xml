@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DetailEdukasiActivity"
+    tools:context=".DetailEdukasi2Activity"
     android:layout_marginLeft="16dp"
     android:layout_marginRight="16dp">
 
@@ -23,14 +23,14 @@
 
 
             <TextView
-                android:id="@+id/judulartikel1"
+                android:id="@+id/judulartikel2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="30dp"
                 android:layout_marginTop="24dp"
-                android:text="@string/judul_artikel1"
+                android:text="@string/judul_artikel2"
                 android:textAlignment="center"
                 android:textSize="16sp"
                 android:textColor="@color/black"
@@ -41,7 +41,7 @@
                 android:id="@+id/iv_gmbrartikel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/home1"
+                android:src="@drawable/e2"
                 android:layout_gravity="center"
                 android:layout_marginTop="24dp"/>
 
@@ -51,7 +51,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
                 android:padding="16dp"
-                android:text="@string/isi_artikel1"
+                android:text="@string/isi_artikel2"
                 android:textColor="@color/black"
                 android:textSize="14sp"
                 android:fontFamily="@font/poppins_regular"

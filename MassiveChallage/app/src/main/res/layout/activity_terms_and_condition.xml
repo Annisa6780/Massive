@@ -37,8 +37,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
-                android:text="@string/teks1"
+                android:textSize="14sp"
+                android:text="@string/isi_SyaratdanKetentuan"
                 android:textColor="@color/black"
+                android:fontFamily="@font/quicksand_variablefont_wght"
                 android:justificationMode="inter_word"/>
 
             <Button

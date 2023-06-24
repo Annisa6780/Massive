@@ -4,9 +4,8 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
-    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-
 
     <application
         android:allowBackup="true"
@@ -18,14 +17,29 @@
         android:theme="@style/Theme.MassiveChallage"
         tools:targetApi="31">
         <activity
+            android:name=".DetailEdukasi5Activity"
+            android:exported="false" />
+        <activity
+            android:name=".DetailEdukasi4Activity"
+            android:exported="false" />
+        <activity
+            android:name=".DetailEdukasi3Activity"
+            android:exported="false" />
+        <activity
+            android:name=".DetailEdukasi2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".SuratPenyataanActivity"
+            android:exported="false" />
+        <activity
             android:name=".TentangActivity"
             android:exported="false" />
         <activity
             android:name=".LaporanDitolakActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".LaporanDiprosesActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".LaporanDiterimaActivity"
             android:exported="true" />
@@ -73,7 +87,13 @@
             android:exported="false" />
         <activity
             android:name=".SplashScreenActivity"
-            android:exported="false" />
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".WebViewActivity"
             android:exported="true" />
@@ -85,7 +105,7 @@
             android:exported="true" />
         <activity
             android:name=".RiwayatLaporanActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".LoginActivity"
             android:exported="true" />
@@ -99,17 +119,8 @@
             android:name=".OnBoarding2Activity"
             android:exported="false" />
         <activity
-            android:name=".OnBoarding1Activity"
-            android:exported="false" />
-        <activity
             android:name=".DaftarActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".FormPelaporanActivity"
             android:exported="true" />

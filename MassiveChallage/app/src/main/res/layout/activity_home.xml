@@ -100,28 +100,174 @@
                     android:orientation="horizontal"
                     android:layout_margin="16dp">
 
-                    <ImageView
-                        android:id="@+id/imgView"
+                    <FrameLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginRight="10dp"
-                        android:src="@drawable/home1" />
+                        android:layout_marginRight="10dp">
 
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginRight="10dp"
-                        android:src="@drawable/home1" />
+                        <ImageView
+                            android:id="@+id/imgView1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/home1" />
 
-                    <ImageView
+                        <TextView
+                            android:layout_width="250dp"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:text="Panduan mengetahui anak mengalami kekerasan atau kekerasan seksual"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/poppins_regular"
+                            android:layout_gravity="center"/>
+
+                    </FrameLayout>
+
+                    <FrameLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginRight="10dp"
-                        android:src="@drawable/home1" />
+                        android:layout_marginRight="10dp">
+
+                        <ImageView
+                            android:id="@+id/imgView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/home1" />
+
+                        <TextView
+                            android:layout_width="250dp"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:text="Panduan mengetahui anak mengalami kekerasan atau kekerasan seksual"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/poppins_regular"
+                            android:layout_gravity="center"/>
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp">
+
+                        <ImageView
+                            android:id="@+id/imgView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/home1" />
+
+                        <TextView
+                            android:layout_width="250dp"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:text="Panduan mengetahui anak mengalami kekerasan atau kekerasan seksual"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/poppins_regular"
+                            android:layout_gravity="center"/>
+
+                    </FrameLayout>
+
 
                 </LinearLayout>
 
             </HorizontalScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:orientation="horizontal"
+                android:gravity="top|center"
+                >
+
+                <LinearLayout
+                    android:id="@+id/edu"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/box"
+                        android:src="@drawable/edu"
+                        android:padding="10dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/edukasi"
+                        android:textColor="@color/primery"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:layout_gravity="center"
+                        android:gravity="center"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/laporan"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/box"
+                        android:src="@drawable/file_text"
+                        android:padding="10dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/laporan"
+                        android:textColor="@color/primery"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:layout_gravity="center"
+                        android:gravity="center"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/kontak"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/box"
+                        android:src="@drawable/phone"
+                        android:padding="10dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/kontak"
+                        android:textColor="@color/primery"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:layout_gravity="center"
+                        android:gravity="center"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/ll_artikel"
@@ -247,17 +393,19 @@
                             android:layout_height="180dp"
                             android:layout_marginRight="16dp"
                             app:cardCornerRadius="10dp"
-                            card_view:cardElevation="8dp">
+                            card_view:cardElevation="8dp"
+                            >
 
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:gravity="center"
-                                android:orientation="vertical">
+                                android:orientation="vertical"
+                                android:padding="2dp">
 
                                 <ImageView
                                     android:layout_width="match_parent"
-                                    android:layout_height="150dp"
+                                    android:layout_height="130dp"
                                     android:scaleType="fitXY"
                                     android:src="@drawable/a1" />
 
@@ -282,7 +430,8 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:gravity="center"
-                                android:orientation="vertical">
+                                android:orientation="vertical"
+                                android:padding="2dp">
 
                                 <ImageView
                                     android:layout_width="match_parent"
@@ -311,7 +460,8 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:gravity="center"
-                                android:orientation="vertical">
+                                android:orientation="vertical"
+                                android:padding="2dp">
 
                                 <ImageView
                                     android:layout_width="match_parent"
