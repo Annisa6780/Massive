@@ -157,6 +157,7 @@
                             android:layout_height="match_parent"
                             android:text="@string/judul_artikel2"
                             android:textSize="7sp"
+                            android:textColor="@color/black"
                             android:gravity="center"/>
 
                     </LinearLayout>
@@ -180,13 +181,14 @@
                             android:layout_width="120dp"
                             android:layout_height="73dp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/artikel1"/>
+                            android:src="@drawable/artikel2"/>
 
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:text="@string/judul_artikel2"
+                            android:text="@string/judul_artikel3"
                             android:textSize="7sp"
+                            android:textColor="@color/black"
                             android:gravity="center"/>
 
                     </LinearLayout>
@@ -210,13 +212,14 @@
                             android:layout_width="120dp"
                             android:layout_height="73dp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/artikel1"/>
+                            android:src="@drawable/artikel3"/>
 
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:text="@string/judul_artikel2"
+                            android:text="@string/judul_artikel4"
                             android:textSize="7sp"
+                            android:textColor="@color/black"
                             android:gravity="center"/>
 
                     </LinearLayout>
@@ -244,13 +247,14 @@
                             android:layout_width="120dp"
                             android:layout_height="73dp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/artikel1"/>
+                            android:src="@drawable/artikel4"/>
 
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:text="@string/judul_artikel2"
+                            android:text="@string/judul_artikel5"
                             android:textSize="7sp"
+                            android:textColor="@color/black"
                             android:gravity="center"/>
 
                     </LinearLayout>
@@ -276,13 +280,15 @@
                             android:layout_width="120dp"
                             android:layout_height="73dp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/artikel1"/>
+                            android:src="@drawable/artikel5"/>
 
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:text="@string/judul_artikel2"
+                            android:text="@string/judul_artikel6"
                             android:textSize="7sp"
+                            android:textColor="@color/black"
+                            android:padding="2dp"
                             android:gravity="center"/>
 
                     </LinearLayout>
@@ -308,13 +314,14 @@
                             android:layout_width="120dp"
                             android:layout_height="73dp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/artikel1"/>
+                            android:src="@drawable/artikel6"/>
 
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:text="@string/judul_artikel2"
+                            android:text="@string/judul_artikel7"
                             android:textSize="7sp"
+                            android:textColor="@color/black"
                             android:gravity="center"/>
 
                     </LinearLayout>
