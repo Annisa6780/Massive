@@ -18,6 +18,7 @@
 <!--        tools:listitem="@layout/item_riwayatlaporan" />-->
 
     <ScrollView
+        android:id="@+id/sv"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         card_view:layout_constraintTop_toTopOf="parent"
@@ -42,10 +43,11 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginLeft="24dp"
-                android:layout_marginTop="24dp"
+                android:layout_marginTop="8dp"
                 android:layout_marginRight="24dp"
                 card_view:cardCornerRadius="10dp"
                 card_view:cardElevation="8dp"
+                android:layout_marginBottom="16dp"
                 >
 
                 <androidx.constraintlayout.widget.ConstraintLayout
