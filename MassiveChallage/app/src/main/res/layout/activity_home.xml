@@ -406,7 +406,8 @@
                             <ImageView
                                 android:layout_width="match_parent"
                                 android:layout_height="141dp"
-                                android:src="@drawable/artikel1"/>
+                                android:src="@drawable/artikel_1"
+                                android:scaleType="centerCrop"/>
 
                             <TextView
                                 android:layout_width="match_parent"
@@ -439,7 +440,8 @@
                             <ImageView
                                 android:layout_width="match_parent"
                                 android:layout_height="141dp"
-                                android:src="@drawable/artikel2"/>
+                                android:src="@drawable/artikel2"
+                                android:scaleType="centerCrop"/>
 
                             <TextView
                                 android:layout_width="match_parent"
