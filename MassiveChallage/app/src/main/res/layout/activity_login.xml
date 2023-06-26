@@ -89,6 +89,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="80dp"
                 android:background="@drawable/template_button"
+                android:textColor="@color/white"
                 android:text="Masuk"
                 android:layout_gravity="center"/>
 
