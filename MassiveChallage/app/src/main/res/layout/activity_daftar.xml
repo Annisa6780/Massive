@@ -26,7 +26,7 @@
                 android:layout_width="93dp"
                 android:layout_height="80dp"
                 android:layout_gravity="center"
-                app:srcCompat="@drawable/logo_regis"
+                app:srcCompat="@drawable/logoapp"
                 android:layout_marginTop="50dp"/>
 
             <TextView
@@ -219,35 +219,35 @@
                 android:textColor="@color/white"
                 app:cornerRadius="10dp" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Surat Pernyataan"
-                android:textSize="14sp"
-                android:textColor="@color/black"
-                android:fontFamily="@font/poppins_semibold"
-                android:padding="5dp"
-                android:layout_marginTop="10dp"/>
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Surat Pernyataan"-->
+<!--                android:textSize="14sp"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:fontFamily="@font/poppins_semibold"-->
+<!--                android:padding="5dp"-->
+<!--                android:layout_marginTop="10dp"/>-->
 
-            <Button
-                android:id="@+id/button"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Upload Surat Pernyataan"
-                android:textColor="@color/white"
-                android:layout_margin="5dp"
-                android:background="@color/primery"
-                app:cornerRadius="10dp"
-                android:fontFamily="@font/poppins_semibold"/>
+<!--            <Button-->
+<!--                android:id="@+id/button"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Upload Surat Pernyataan"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:layout_margin="5dp"-->
+<!--                android:background="@color/primery"-->
+<!--                app:cornerRadius="10dp"-->
+<!--                android:fontFamily="@font/poppins_semibold"/>-->
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Download Surat Pernyataan"
-                android:textSize="14sp"
-                android:textColor="@color/primery"
-                android:fontFamily="@font/poppins_semibold"
-                android:padding="5dp"/>
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Download Surat Pernyataan"-->
+<!--                android:textSize="14sp"-->
+<!--                android:textColor="@color/primery"-->
+<!--                android:fontFamily="@font/poppins_semibold"-->
+<!--                android:padding="5dp"/>-->
 
             <TextView
                 android:layout_width="match_parent"
@@ -322,6 +322,7 @@
                 android:text="Saya telah membaca dan menyetujui" />
 
             <TextView
+                android:id="@+id/syarat"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="syarat dan ketentuan layanan"

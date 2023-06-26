@@ -6,11 +6,10 @@
     android:layout_height="match_parent"
     tools:context=".LaporanPolsekActivity">
 
+
     <ListView
         android:id="@+id/lv_pelaporan"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-
-
+        android:layout_height="match_parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

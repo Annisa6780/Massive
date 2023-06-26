@@ -17,7 +17,7 @@ class RiwayatLaporanActivity : AppCompatActivity() {
         var btnPengajuan: CardView? = null
         btnPengajuan = findViewById(R.id.cv_pengajuanLaporan)
         btnPengajuan?.setOnClickListener {
-            startActivity(Intent(this, LaporDanRiwayatActivity::class.java))
+            startActivity(Intent(this, PelaporActivity::class.java))
         }
 
         var btnProses: CardView? = null

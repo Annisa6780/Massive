@@ -4,14 +4,13 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-import androidx.core.view.size
 import androidx.recyclerview.widget.RecyclerView
+import com.example.massivechallage.DataKontakPolisi
 import com.example.massivechallage.R
-import com.example.massivechallage.data.KontakPolisi
 
 //link tutorial https://www.youtube.com/watch?v=VVXKVFyYQdQ
 
-class AdapterKontakPolisi(private val listkontakpolisi: List<KontakPolisi>) : RecyclerView.Adapter<AdapterKontakPolisi.MyViewHolder> (){
+class AdapterKontakPolisi(private val listkontakpolisi: List<DataKontakPolisi>) : RecyclerView.Adapter<AdapterKontakPolisi.MyViewHolder> (){
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
@@ -27,9 +26,9 @@ class AdapterKontakPolisi(private val listkontakpolisi: List<KontakPolisi>) : Re
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         val currentItem = listkontakpolisi[position]
 
-        holder.nama_polsek.text = currentItem.nama_polsek
-        holder.alamat_polsek.text = currentItem.alamat_polsek
-        holder.telp_polsek.text = currentItem.telp_polsek
+        holder.nama_polsek.text = currentItem.nama
+        holder.alamat_polsek.text = currentItem.alamat
+        holder.telp_polsek.text = currentItem.telp
     }
 
     class  MyViewHolder (itemView: View) : RecyclerView.ViewHolder(itemView) {

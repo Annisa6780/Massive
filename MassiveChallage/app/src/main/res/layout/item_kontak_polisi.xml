@@ -6,6 +6,12 @@
     app:cardElevation="4dp"
     app:cardCornerRadius="8dp"
     android:id="@+id/cv_kontak"
+
+    android:layout_gravity="center"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="15dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginBottom="5dp"
     >
 
 
@@ -35,20 +41,17 @@
                 android:text="Polsek Lubuk Baja"
                 android:textColor="@color/black"
                 android:fontFamily="@font/poppins_semibold"
-                android:padding="5dp"
-                android:textSize="18dp"
+                android:textSize="16sp"
                 />
 
             <TextView
                 android:id="@+id/alamat_polsek"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Jl. Bunga Raya, Baloi Indah,
-Batam Kota, Kota Batam, Kepulauan Riau"
+                android:text="Jl. Bunga Raya, Baloi Indah,Batam Kota, Kota Batam, Kepulauan Riau"
                 android:textColor="@color/black"
                 android:fontFamily="@font/quicksand_variablefont_wght"
-                android:padding="5dp"
-                android:textSize="16dp"
+                android:textSize="16sp"
                 />
 
             <TextView
@@ -58,8 +61,7 @@ Batam Kota, Kota Batam, Kepulauan Riau"
                 android:text="(0778) 457212"
                 android:textColor="@color/black"
                 android:fontFamily="@font/quicksand_variablefont_wght"
-                android:padding="5dp"
-                android:textSize="16dp"
+                android:textSize="16sp"
                 />
 
         </LinearLayout>

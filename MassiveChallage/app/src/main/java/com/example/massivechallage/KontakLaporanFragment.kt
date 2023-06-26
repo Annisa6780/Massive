@@ -9,7 +9,6 @@ import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.massivechallage.data.adapter.AdapterKontakPolisi
-import com.example.massivechallage.data.KontakPolisi
 import com.google.firebase.database.*
 
 // TODO: Rename parameter arguments, choose names that match
@@ -39,7 +38,7 @@ class KontakLaporanFragment : Fragment() {
     override fun onCreate( savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         kprecyclerView.layoutManager = LinearLayoutManager(requireContext())
-        var kpArrayList = ArrayList<KontakPolisi>()
+        var kpArrayList = ArrayList<DataKontakPolisi>()
         val adapter = AdapterKontakPolisi(kpArrayList)
         kprecyclerView.adapter = adapter
         getKpData(adapter)
@@ -51,10 +50,10 @@ class KontakLaporanFragment : Fragment() {
 
             override fun onDataChange(snapshot: DataSnapshot) {
                 if (snapshot.exists()) {
-                   val kpArrayList = ArrayList<KontakPolisi>()
+                   val kpArrayList = ArrayList<DataKontakPolisi>()
                     for (kpSnapshot in snapshot.children) {
 
-                        val kp = kpSnapshot.getValue(KontakPolisi::class.java)
+                        val kp = kpSnapshot.getValue(DataKontakPolisi::class.java)
                         kp?.let {
                             kpArrayList.add(it)
                         }

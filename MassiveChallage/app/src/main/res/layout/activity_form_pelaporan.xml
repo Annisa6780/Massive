@@ -242,7 +242,7 @@
             <Spinner
                 android:id="@+id/jenis_laporan"
                 android:layout_width="match_parent"
-                android:layout_height="45dp"
+                android:layout_height="48dp"
                 android:fontFamily="@font/quicksand_variablefont_wght"
                 android:entries="@array/list_kekerasan"
                 />

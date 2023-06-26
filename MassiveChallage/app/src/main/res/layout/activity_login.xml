@@ -72,16 +72,16 @@
                 android:fontFamily="@font/poppins_regular"
                 android:textSize="14sp"/>
 
-            <TextView
-                android:id="@+id/tv_lupapass"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:layout_marginRight="8dp"
-                android:gravity="right"
-                android:text="Lupa Sandi?"
-                android:textColor="@color/primery"
-                android:textSize="16sp" />
+<!--            <TextView-->
+<!--                android:id="@+id/tv_lupapass"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:layout_marginRight="8dp"-->
+<!--                android:gravity="right"-->
+<!--                android:text="Lupa Sandi?"-->
+<!--                android:textColor="@color/primery"-->
+<!--                android:textSize="16sp" />-->
 
             <Button
                 android:id="@+id/btnMasuk"

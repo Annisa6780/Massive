@@ -1,5 +1,6 @@
 package com.example.massivechallage
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -10,6 +11,7 @@ class LaporanPolsekActivity : AppCompatActivity() {
 
     private lateinit var listView: ListView
 
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         supportActionBar?.hide()
@@ -21,7 +23,7 @@ class LaporanPolsekActivity : AppCompatActivity() {
             "Polsek Nongsa", "Polsek Batu Aji", "Polsek Batu Ampar",
             "Polsek Belakang Padang", "Polsek KKP", "Polsek Bengkong",
             "Polsek Sei Beduk", "Polsek Sagulung", "Polsek Galang",
-            "Polsek KKB", "Polsek Barelang"
+            "Polsek KKB"
         )
 
         val adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, polsek)

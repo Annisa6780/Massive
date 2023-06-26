@@ -9,6 +9,5 @@ data class Pengguna(
     val pekerjaan: String,
     val email: String,
     val kata_sandi: String,
-    val email1: String,
-    val kata_sandi1: String
+    val email1: String
 )
