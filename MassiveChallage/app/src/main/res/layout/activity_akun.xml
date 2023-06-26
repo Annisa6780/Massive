@@ -26,7 +26,8 @@
                 android:layout_height="115dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="24dp"
-                android:src="@drawable/profil3" />
+                android:src="@drawable/profil3"
+                />
 
             <TextView
                 android:id="@+id/tv_namaprofil"
@@ -34,11 +35,11 @@
                 android:layout_height="wrap_content"
                 android:text="@string/namaLengkap"
                 android:textSize="16sp"
-                android:textStyle="bold"
+                android:textColor="@color/black"
                 android:layout_marginTop="8dp"
                 android:layout_gravity="center"
-                android:textColor="@color/black"
-                android:layout_marginBottom="24dp"/>
+                android:layout_marginBottom="24dp"
+                android:fontFamily="@font/poppins_semibold"/>
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/editprofil"
@@ -50,7 +51,6 @@
                 card_view:layout_constraintStart_toStartOf="parent"
                 card_view:layout_constraintEnd_toEndOf="parent"
                 card_view:cardCornerRadius="10dp"
-                tools:ignore="MissingConstraints"
                 android:backgroundTint="@color/bg">
 
                 <LinearLayout
@@ -75,8 +75,8 @@
                         android:textColor="@color/black"
                         android:textSize="16sp"
                         android:gravity="left"
-                        android:textStyle="bold"
                         android:padding="12dp"
+                        android:fontFamily="@font/poppins_semibold"
                         />
 
                 </LinearLayout>
@@ -92,7 +92,6 @@
                 card_view:layout_constraintStart_toStartOf="parent"
                 card_view:layout_constraintEnd_toEndOf="parent"
                 card_view:cardCornerRadius="10dp"
-                tools:ignore="MissingConstraints"
                 android:backgroundTint="@color/bg">
 
                 <LinearLayout
@@ -117,8 +116,8 @@
                         android:textColor="@color/black"
                         android:textSize="16sp"
                         android:gravity="left"
-                        android:textStyle="bold"
                         android:padding="12dp"
+                        android:fontFamily="@font/poppins_semibold"
                         />
 
                 </LinearLayout>
@@ -148,8 +147,8 @@
                     android:textColor="@color/black"
                     android:textSize="16sp"
                     android:gravity="left"
-                    android:textStyle="bold"
                     android:padding="12dp"
+                    android:fontFamily="@font/poppins_semibold"
                     />
 
             </LinearLayout>

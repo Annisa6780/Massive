@@ -31,10 +31,6 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            card_view:layout_constraintTop_toTopOf="parent"
-            card_view:layout_constraintBottom_toBottomOf="parent"
-            card_view:layout_constraintStart_toStartOf="parent"
-            card_view:layout_constraintEnd_toEndOf="parent"
             >
 
             <androidx.cardview.widget.CardView
@@ -47,7 +43,6 @@
                 android:layout_marginRight="24dp"
                 card_view:cardCornerRadius="10dp"
                 card_view:cardElevation="8dp"
-                android:layout_marginBottom="16dp"
                 >
 
                 <androidx.constraintlayout.widget.ConstraintLayout
@@ -80,8 +75,8 @@
                             android:padding="15dp"
                             android:text="@string/title_pengajuanLaporan"
                             android:textSize="20sp"
-                            android:textStyle="bold"
                             android:textColor="@color/primery"
+                            android:fontFamily="@font/poppins_semibold"
                             />
 
 
@@ -117,8 +112,8 @@
                             android:text="@string/jumlah_riwayat"
                             android:textAlignment="center"
                             android:textSize="32sp"
-                            android:textStyle="bold"
-                            android:textColor="@color/black"/>
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/poppins_semibold"/>
 
                         <TextView
                             android:id="@+id/teks_laporan"
@@ -128,7 +123,7 @@
                             android:text="@string/txt_laporan"
                             android:textAlignment="center"
                             android:textSize="14sp"
-                            android:textStyle="bold"
+                            android:fontFamily="@font/poppins_semibold"
                             android:textColor="@color/black"/>
 
                     </LinearLayout>
@@ -181,7 +176,7 @@
                             android:padding="15dp"
                             android:text="@string/title_laporanDiproses"
                             android:textSize="20sp"
-                            android:textStyle="bold"
+                            android:fontFamily="@font/poppins_semibold"
                             android:textColor="@color/primery"
                             />
 
@@ -218,7 +213,7 @@
                             android:text="@string/jumlah_riwayat"
                             android:textAlignment="center"
                             android:textSize="32sp"
-                            android:textStyle="bold"
+                            android:fontFamily="@font/poppins_semibold"
                             android:textColor="@color/black"/>
 
                         <TextView
@@ -229,7 +224,7 @@
                             android:text="@string/txt_laporan"
                             android:textAlignment="center"
                             android:textSize="14sp"
-                            android:textStyle="bold"
+                            android:fontFamily="@font/poppins_semibold"
                             android:textColor="@color/black"/>
 
                     </LinearLayout>
@@ -282,7 +277,7 @@
                             android:padding="15dp"
                             android:text="@string/title_laporanDiterima"
                             android:textSize="20sp"
-                            android:textStyle="bold"
+                            android:fontFamily="@font/poppins_semibold"
                             android:textColor="@color/primery"
                             />
 
@@ -319,7 +314,7 @@
                             android:text="@string/jumlah_riwayat"
                             android:textAlignment="center"
                             android:textSize="32sp"
-                            android:textStyle="bold"
+                            android:fontFamily="@font/poppins_semibold"
                             android:textColor="@color/black"/>
 
                         <TextView
@@ -330,7 +325,7 @@
                             android:text="@string/txt_laporan"
                             android:textAlignment="center"
                             android:textSize="14sp"
-                            android:textStyle="bold"
+                            android:fontFamily="@font/poppins_semibold"
                             android:textColor="@color/black"/>
 
                     </LinearLayout>
@@ -349,8 +344,10 @@
                 android:layout_marginLeft="24dp"
                 android:layout_marginTop="24dp"
                 android:layout_marginRight="24dp"
+                android:layout_marginBottom="16dp"
                 card_view:cardCornerRadius="10dp"
                 card_view:cardElevation="8dp"
+
                 >
 
                 <androidx.constraintlayout.widget.ConstraintLayout
@@ -383,7 +380,7 @@
                             android:padding="15dp"
                             android:text="@string/title_laporanDitolak"
                             android:textSize="20sp"
-                            android:textStyle="bold"
+                            android:fontFamily="@font/poppins_semibold"
                             android:textColor="@color/primery"
                             />
 
@@ -420,7 +417,7 @@
                             android:text="@string/jumlah_riwayat"
                             android:textAlignment="center"
                             android:textSize="32sp"
-                            android:textStyle="bold"
+                            android:fontFamily="@font/poppins_semibold"
                             android:textColor="@color/black"/>
 
                         <TextView
@@ -431,7 +428,7 @@
                             android:text="@string/txt_laporan"
                             android:textAlignment="center"
                             android:textSize="14sp"
-                            android:textStyle="bold"
+                            android:fontFamily="@font/poppins_semibold"
                             android:textColor="@color/black"/>
 
                     </LinearLayout>

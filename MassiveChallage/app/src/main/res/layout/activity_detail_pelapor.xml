@@ -43,7 +43,7 @@
                     android:layout_height="wrap_content"
                     android:padding="8dp"
                     android:text="Nama    :"
-                    android:textStyle="bold" />
+                    android:fontFamily="@font/poppins_semibold" />
 
                 <TextView
                     android:id="@+id/tv_namapelapor"
@@ -51,7 +51,7 @@
                     android:layout_height="wrap_content"
                     android:padding="8dp"
                     android:text=""
-                    android:textStyle="bold" />
+                    android:fontFamily="@font/poppins_semibold"/>
             </LinearLayout>
 
             <LinearLayout
@@ -65,8 +65,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:padding="8dp"
-                    android:text="NIK        :"
-                    android:textStyle="bold" />
+                    android:text="NIK          :"
+                    android:fontFamily="@font/poppins_semibold"/>
 
                 <TextView
                     android:id="@+id/tv_nikpelapor"
@@ -74,7 +74,7 @@
                     android:layout_height="wrap_content"
                     android:padding="8dp"
                     android:text=""
-                    android:textStyle="bold" />
+                    android:fontFamily="@font/poppins_semibold" />
             </LinearLayout>
 
             <LinearLayout
@@ -88,8 +88,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:padding="8dp"
-                    android:text="TTL        :"
-                    android:textStyle="bold" />
+                    android:text="TTL          :"
+                    android:fontFamily="@font/poppins_semibold"/>
 
                 <TextView
                     android:id="@+id/tc_ttlpelapor"
@@ -111,8 +111,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:padding="8dp"
-                    android:text="Telp       :"
-                    android:textStyle="bold" />
+                    android:text="Telp        :"
+                    android:fontFamily="@font/poppins_semibold" />
 
                 <TextView
                     android:id="@+id/tv_telppelapor"
@@ -134,8 +134,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:padding="8dp"
-                    android:text="Telp       :"
-                    android:textStyle="bold" />
+                    android:text="Alamat  :"
+                    android:fontFamily="@font/poppins_semibold" />
 
                 <TextView
                     android:id="@+id/tv_alamatpelapor"
@@ -153,7 +153,7 @@
                 android:layout_marginTop="24dp"
                 android:padding="8dp"
                 android:text="Judul Kekerasan"
-                android:textStyle="bold" />
+                android:fontFamily="@font/poppins_semibold" />
 
             <TextView
                 android:id="@+id/tv_judulkekerasan"
@@ -161,7 +161,8 @@
                 android:layout_height="wrap_content"
                 android:padding="8dp"
                 android:text=""
-                android:textSize="11dp" />
+                android:textSize="11dp"
+                android:fontFamily="@font/poppins_semibold"/>
 
             <TextView
                 android:id="@+id/tv_jdl2"
@@ -170,7 +171,7 @@
                 android:layout_marginTop="8dp"
                 android:padding="8dp"
                 android:text="Jenis Kekerasan"
-                android:textStyle="bold" />
+                android:fontFamily="@font/poppins_semibold" />
 
             <TextView
                 android:id="@+id/tv_jeniskekerasan"
@@ -178,7 +179,8 @@
                 android:layout_height="wrap_content"
                 android:padding="8dp"
                 android:text=""
-                android:textSize="11dp" />
+                android:textSize="11dp"
+                android:fontFamily="@font/poppins_semibold"/>
 
             <TextView
                 android:id="@+id/tv_jdl3"
@@ -187,7 +189,7 @@
                 android:layout_marginTop="8dp"
                 android:padding="8dp"
                 android:text="Lokasi Kekerasan"
-                android:textStyle="bold" />
+                android:fontFamily="@font/poppins_semibold" />
 
             <TextView
                 android:id="@+id/tv_lokasi"
@@ -195,7 +197,8 @@
                 android:layout_height="wrap_content"
                 android:padding="8dp"
                 android:text=""
-                android:textSize="11dp" />
+                android:textSize="11dp"
+                android:fontFamily="@font/poppins_semibold"/>
 
             <TextView
                 android:id="@+id/tv_jdl4"
@@ -204,7 +207,7 @@
                 android:layout_marginTop="8dp"
                 android:padding="8dp"
                 android:text="Tanggal Kejadian"
-                android:textStyle="bold" />
+                android:fontFamily="@font/poppins_semibold" />
 
             <TextView
                 android:id="@+id/tv_tanggalkejadian"
@@ -212,15 +215,26 @@
                 android:layout_height="wrap_content"
                 android:padding="8dp"
                 android:text=""
-                android:textSize="11dp" />
+                android:textSize="11dp"
+                android:fontFamily="@font/poppins_semibold"/>
+
+            <TextView
+                android:id="@+id/tv_jdldeskripsi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:padding="8dp"
+                android:text="deskripsi"
+                android:fontFamily="@font/poppins_semibold"/>
 
             <TextView
                 android:id="@+id/tv_deskripsi"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="24dp"
                 android:padding="8dp"
-                android:text="deskripsi" />
+                android:text=""
+                android:textSize="11dp"
+                android:fontFamily="@font/poppins_semibold"/>
 
             <ImageView
                 android:id="@+id/iv_buktigambar"

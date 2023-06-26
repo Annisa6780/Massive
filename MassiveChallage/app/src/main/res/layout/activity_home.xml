@@ -312,6 +312,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:fillViewport="true"
+                android:padding="1dp"
                 >
 
                 <LinearLayout
@@ -328,7 +329,8 @@
                         android:gravity="center"
                         android:padding="5dp"
                         android:text="Bully"
-                        android:textColor="@color/primery" />
+                        android:textColor="@color/primery"
+                        android:fontFamily="@font/poppins_regular"/>
 
                     <TextView
                         android:layout_width="100dp"
@@ -338,7 +340,8 @@
                         android:gravity="center"
                         android:padding="5dp"
                         android:text="Bully"
-                        android:textColor="@color/primery" />
+                        android:textColor="@color/primery"
+                        android:fontFamily="@font/poppins_regular" />
 
                     <TextView
                         android:layout_width="100dp"
@@ -348,7 +351,8 @@
                         android:gravity="center"
                         android:padding="5dp"
                         android:text="Bully"
-                        android:textColor="@color/primery" />
+                        android:textColor="@color/primery"
+                        android:fontFamily="@font/poppins_regular"/>
 
                     <TextView
                         android:layout_width="100dp"
@@ -358,7 +362,8 @@
                         android:gravity="center"
                         android:padding="5dp"
                         android:text="Bully"
-                        android:textColor="@color/primery" />
+                        android:textColor="@color/primery"
+                        android:fontFamily="@font/poppins_regular"/>
 
                     <TextView
                         android:layout_width="100dp"
@@ -368,7 +373,8 @@
                         android:gravity="center"
                         android:padding="5dp"
                         android:text="Bully"
-                        android:textColor="@color/primery" />
+                        android:textColor="@color/primery"
+                        android:fontFamily="@font/poppins_regular"/>
 
                 </LinearLayout>
 

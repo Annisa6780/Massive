@@ -30,7 +30,7 @@
                 android:text="Perolahan dan Pengumpulan \nData Pengguna"
                 android:textAlignment="center"
                 android:textSize="16sp"
-                android:textStyle="bold"
+                android:fontFamily="@font/poppins_semibold"
                 android:textColor="@color/black"/>
 
             <TextView
@@ -39,6 +39,8 @@
                 android:layout_marginTop="24dp"
                 android:text="@string/tentang"
                 android:textColor="@color/black"
+                android:textSize="12sp"
+                android:fontFamily="@font/quicksand_variablefont_wght"
                 android:justificationMode="inter_word"/>
 
 

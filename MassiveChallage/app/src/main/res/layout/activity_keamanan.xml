@@ -32,7 +32,7 @@
             android:text="@string/berbagiInfo"
             android:padding="16dp"
             android:justificationMode="inter_word"
-            android:fontFamily="@font/poppins_regular"/>
+            android:fontFamily="@font/quicksand_variablefont_wght"/>
 
         <CheckBox
             android:id="@+id/checkBoxAkses"
